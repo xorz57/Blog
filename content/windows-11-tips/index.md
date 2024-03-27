@@ -4,8 +4,8 @@ draft = false
 title = "Windows 11 Tips"
 +++
 
-![FolderOptions](FolderOptions.png)
+![screenshot-1](screenshot-1.png)
 
-![Start](Start.png)
+![screenshot-2](screenshot-2.png)
 
-![Taskbar](Taskbar.png)
+![screenshot-3](screenshot-3.png)
