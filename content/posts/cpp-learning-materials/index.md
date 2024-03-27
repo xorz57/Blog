@@ -1,7 +1,7 @@
 +++
 date = 2024-03-26
 draft = false
-title = "C++ Learning Material"
+title = "C++ Learning Materials"
 +++
 
 ## YouTube Channels
