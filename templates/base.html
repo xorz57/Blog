@@ -19,9 +19,8 @@
         {% include "partials/footer.html" %}
     </footer>
 
-    {% if page %}
-    <script id="dsq-count-scr" src="//xorz57.disqus.com/count.js" async></script>
-    {% endif %}
+    {% block script %}
+    {% endblock script %}
 
     {% if config.extra.adsense %}
     <script async
