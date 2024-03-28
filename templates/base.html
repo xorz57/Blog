@@ -27,8 +27,10 @@
         {% include "footer.html" %}
     </footer>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8706113351509384"
+    {% if config.extra.adsense %}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ config.extra.adsense }}"
         crossorigin="anonymous"></script>
+    {% endif %}
 </body>
 
 </html>
