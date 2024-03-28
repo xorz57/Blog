@@ -17,12 +17,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow">
+
+{% if config.generate_feed %}
+<link rel="alternate" href="{{ get_url(path='atom.xml') | safe }}" type="application/atom+xml" title="RSS Feed">
+{% endif %}
+
 {% if description %}
 <meta name="description" content="{{ description | safe }}">
 {% endif %}
+
 {% if title %}
 <title>{{ title | safe }}</title>
 {% endif %}
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
