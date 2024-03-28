@@ -1,12 +1,11 @@
 {% extends "base.html" %}
 
-{% block title %}{{ section.title }}{% endblock title %}
+{% block title %}{{ section.title | safe }}{% endblock title %}
 
 {% block content %}
-<h1>{{ section.title }}</h1>
 <ul>
     {% for page in section.pages %}
-    <li><a href="{{ page.permalink }}">{{ page.date }} {{ page.title }}</a></li>
+    <li><a href="{{ page.permalink | safe }}">{{ page.date | safe }} {{ page.title | safe }}</a></li>
     {% endfor %}
 </ul>
 {% endblock content %}
