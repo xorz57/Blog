@@ -5,4 +5,7 @@
     <h1>{{ page.title | safe }}</h1>
     {{ page.content | safe }}
 </article>
+
+{% include "partials/disqus.html" %}
+
 {% endblock main %}
