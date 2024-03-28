@@ -6,11 +6,22 @@
 {% set title = config.title %}
 {% endif %}
 
+{% if page.description %}
+{% set description = page.description | truncate(length=120) %}
+{% elif section.description %}
+{% set description = section.description | truncate(length=120) %}
+{% elif config.description %}
+{% set description = config.description | truncate(length=120) %}
+{% endif %}
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow">
+{% if description %}
+<meta name="description" content="{{ description | safe }}">
+{% endif %}
 {% if title %}
-<title>{{ title }}</title>
+<title>{{ title | safe }}</title>
 {% endif %}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
