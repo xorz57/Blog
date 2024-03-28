@@ -28,6 +28,10 @@
         {% include "footer.html" %}
     </footer>
 
+    {% if page %}
+    <script id="dsq-count-scr" src="//xorz57.disqus.com/count.js" async></script>
+    {% endif %}
+
     {% if config.extra.adsense %}
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ config.extra.adsense }}"
         crossorigin="anonymous"></script>
