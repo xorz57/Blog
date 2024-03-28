@@ -1,6 +1,12 @@
 base_url = "https://xorz57.pages.dev"
+title = "xorz57"
+author = "xorz57"
+description = "xorz57's Blog"
 compile_sass = false
+minify_html = true
 build_search_index = false
+generate_feed = true
+feed_filename = "atom.xml"
 
 [markdown]
 highlight_code = false
