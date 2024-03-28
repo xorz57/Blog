@@ -1,7 +1,7 @@
 base_url = "https://xorz57.pages.dev"
-title = "xorz57"
-author = "xorz57"
+title = "xorz57's Blog"
 description = "xorz57's Blog"
+author = "xorz57"
 compile_sass = false
 minify_html = true
 build_search_index = false
