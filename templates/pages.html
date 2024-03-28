@@ -4,8 +4,8 @@
 
 {% block content %}
 <ul>
-    {% for post in section.pages %}
-    <li><a href="{{ post.permalink }}">{{ post.date }} {{ post.title }}</a></li>
+    {% for page in section.pages %}
+    <li><a href="{{ page.permalink }}">{{ page.date }} {{ page.title }}</a></li>
     {% endfor %}
 </ul>
 {% endblock content %}
