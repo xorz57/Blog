@@ -3,6 +3,7 @@
 {% block title %}{{ section.title }}{% endblock title %}
 
 {% block content %}
+<h1>{{ section.title }}</h1>
 <ul>
     {% for page in section.pages %}
     <li><a href="{{ page.permalink }}">{{ page.date }} {{ page.title }}</a></li>
