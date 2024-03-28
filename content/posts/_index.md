@@ -1,6 +1,6 @@
 +++
 page_template = "page.html"
 sort_by = "date"
-template = "pages.html"
+template = "section.html"
 title = "Posts"
 +++
