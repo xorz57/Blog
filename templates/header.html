@@ -1,9 +1,0 @@
-{% if page.title %}
-{% set title = page.title %}
-{% elif section.title %}
-{% set title = section.title %}
-{% elif config.title %}
-{% set title = config.title %}
-{% endif %}
-
-<h1>{{ title | safe }}</h1>
