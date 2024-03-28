@@ -3,5 +3,7 @@
 {% block title %}{{ page.title }}{% endblock title %}
 
 {% block content %}
-{{ page.content | safe }}
+<article>
+    {{ page.content | safe }}
+</article>
 {% endblock content %}

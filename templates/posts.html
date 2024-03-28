@@ -3,7 +3,9 @@
 {% block title %}{{ section.title }}{% endblock title %}
 
 {% block content %}
-{% for post in section.pages %}
-<h1><a href="{{ post.permalink }}">{{ post.date }} {{ post.title }}</a></h1>
-{% endfor %}
+<ul>
+    {% for post in section.pages %}
+    <li><a href="{{ post.permalink }}">{{ post.date }} {{ post.title }}</a></li>
+    {% endfor %}
+</ul>
 {% endblock content %}

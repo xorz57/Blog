@@ -3,5 +3,7 @@
 {% block title %}{{ section.title }}{% endblock title %}
 
 {% block content %}
-<h1><a href="{{ get_url(path='@/posts/_index.md') }}">Posts</a></h1>
+<ul>
+    <li><a href="{{ get_url(path='@/posts/_index.md') }}">Posts</a></li>
+</ul>
 {% endblock content %}
