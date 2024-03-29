@@ -19,4 +19,4 @@ chart = true
 mermaid = true
 
 [extra.disqus]
-shortname = "xorz57"
+# shortname = "xorz57"
