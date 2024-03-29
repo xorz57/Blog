@@ -3,6 +3,7 @@
 {% block content %}
 <section class="section">
     <h1 class="title">{{ page.title | safe }}</h1>
+    <h2 class="subtitle">{{ page.description | safe }}</h2>
     {{ page.content | safe }}
 </section>
 {% endblock content %}
