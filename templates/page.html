@@ -27,6 +27,6 @@
 
 {% block script %}
 {% if config.extra.disqus.shortname %}
-<script id="dsq-count-scr" src="//{{ config.extra.disqus.shortname }}.disqus.com/count.js" async></script>
+<script id="dsq-count-scr" src="https://{{ config.extra.disqus.shortname | safe }}.disqus.com/count.js" async></script>
 {% endif %}
 {% endblock script %}
