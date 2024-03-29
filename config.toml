@@ -13,8 +13,5 @@ highlight_code = false
 
 [extra]
 
-[extra.ads]
-google = "ca-pub-8706113351509384"
-
 [extra.comments]
 disqus = "xorz57.disqus.com"
