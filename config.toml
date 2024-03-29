@@ -17,6 +17,3 @@ smart_punctuation = true
 [extra]
 chart = true
 mermaid = true
-
-[extra.disqus]
-# shortname = "xorz57"
