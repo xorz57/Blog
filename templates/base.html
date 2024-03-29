@@ -22,9 +22,9 @@
     {% block script %}
     {% endblock script %}
 
-    {% if config.extra.adsense %}
+    {% if config.extra.ads.google %}
     <script async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ config.extra.adsense | safe }}"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ config.extra.ads.google | safe }}"
         crossorigin="anonymous"></script>
     {% endif %}
 </body>
