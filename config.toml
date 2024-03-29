@@ -12,6 +12,8 @@ feed_filename = "atom.xml"
 highlight_code = false
 
 [extra]
+chart = true
+mermaid = true
 
 [extra.disqus]
 shortname = "xorz57"
