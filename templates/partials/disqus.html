@@ -1,13 +1,13 @@
 <div id="disqus_thread"></div>
 <script>
     var disqus_config = function () {
-        this.page.url = '{{ page.permalink }}';
-        this.page.identifier = '{{ page.title }}';
+        this.page.url = '{{ config.base_url | safe }}';
+        this.page.identifier = '{{ current_path | safe }}';
     };
 
     (function () { // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');
-        s.src = 'https://xorz57.disqus.com/embed.js';
+        s.src = 'https://{{ config.extra.comments.disqus | safe }}/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();

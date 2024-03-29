@@ -3,13 +3,13 @@
 {% block main %}
 <h1>{{ page.title | safe }}</h1>
 {{ page.content | safe }}
-{% if config.extra.disqus %}
+{% if config.extra.comments.disqus %}
 {% include "partials/disqus.html" %}
 {% endif %}
 {% endblock main %}
 
 {% block script %}
-{% if config.extra.disqus %}
-<script id="dsq-count-scr" src="//{{ config.extra.disqus }}/count.js" async></script>
+{% if config.extra.comments.disqus %}
+<script id="dsq-count-scr" src="//{{ config.extra.comments.disqus }}/count.js" async></script>
 {% endif %}
 {% endblock script %}
