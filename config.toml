@@ -9,7 +9,10 @@ generate_feed = true
 feed_filename = "atom.xml"
 
 [markdown]
-highlight_code = false
+highlight_code = true
+highlight_theme = "one-dark"
+render_emoji = true
+smart_punctuation = true
 
 [extra]
 chart = true
