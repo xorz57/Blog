@@ -3,8 +3,6 @@
 {% block content %}
 <h1>{{ page.title | safe }}</h1>
 {{ page.content | safe }}
-{% if config.extra.comments.disqus %}
-{% endif %}
 {% endblock content %}
 
 {% block comment %}
