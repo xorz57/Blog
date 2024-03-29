@@ -13,5 +13,5 @@ highlight_code = false
 
 [extra]
 
-[extra.comments]
-disqus = "xorz57.disqus.com"
+[extra.disqus]
+shortname = "xorz57"

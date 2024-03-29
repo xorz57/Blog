@@ -15,7 +15,7 @@
 
     (function () { // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');
-        s.src = 'https://{{ config.extra.comments.disqus | safe }}/embed.js';
+        s.src = 'https://{{ config.extra.disqus.shortname | safe }}.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
@@ -26,7 +26,7 @@
 {% endblock comment %}
 
 {% block script %}
-{% if config.extra.comments.disqus %}
-<script id="dsq-count-scr" src="//{{ config.extra.comments.disqus }}/count.js" async></script>
+{% if config.extra.disqus.shortname %}
+<script id="dsq-count-scr" src="//{{ config.extra.disqus.shortname }}.disqus.com/count.js" async></script>
 {% endif %}
 {% endblock script %}
