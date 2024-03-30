@@ -31,7 +31,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <link rel="icon" href="{{ get_url(path='favicon.svg') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
@@ -53,16 +55,11 @@
     </footer>
 
     {% if config.extra.chart %}
-    <script type="module">
-        import chartJs from 'https://cdn.jsdelivr.net/npm/chart.js@4.4.2/+esm'
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
     {% endif %}
 
     {% if config.extra.mermaid %}
-    <script type="module">
-        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10.9.0/+esm'
-        mermaid.initialize({ startOnLoad: true });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"></script>
     {% endif %}
 </body>
 
