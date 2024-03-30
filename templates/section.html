@@ -3,7 +3,7 @@
 {% block content %}
 <section class="section">
     {% if section.title %}
-    <h1 class="title"># {{ section.title }}</h1>
+    <h1 class="title"># {{ section.title | safe }}</h1>
     {% endif %}
 
     <ul>
