@@ -1,13 +1,18 @@
 {% extends "base.html" %}
 
 {% block main %}
-<section class="section">
-    {% if config.title %}
-    <h1 class="title">{{ config.title | safe }}</h1>
-    {% endif %}
+<section class="hero is-fullheight-with-navbar">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            {% if config.title %}
+            <p class="title is-size-1">{{ config.title | safe }}</p>
+            {% endif %}
 
-    {% if config.description %}
-    <h2 class="subtitle">{{ config.description | safe }}</h2>
-    {% endif %}
+            {% if config.description %}
+            <p class="subtitle is-size-2">{{ config.description | safe }}</p>
+            {% endif %}
+        </div>
+    </div>
 </section>
+
 {% endblock main %}
