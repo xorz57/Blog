@@ -2,10 +2,12 @@
 
 {% block main %}
 <section class="section">
-    {% if section.content %}
-    <div class="content">
-        {{ section.content | safe }}
-    </div>
+    {% if config.title %}
+    <h1 class="title">{{ config.title | safe }}</h1>
+    {% endif %}
+
+    {% if config.description %}
+    <h2 class="subtitle">{{ config.description | safe }}</h2>
     {% endif %}
 </section>
 {% endblock main %}
