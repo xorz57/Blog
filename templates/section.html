@@ -6,6 +6,10 @@
     <h1 class="title">{{ section.title | safe }}</h1>
     {% endif %}
 
+    {% if section.description %}
+    <h2 class="subtitle">{{ section.description | safe }}</h2>
+    {% endif %}
+
     <ul>
         {% for page in section.pages %}
         <li>
