@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block content %}
+{% block main %}
 <section class="section">
     {% if section.title %}
     <h1 class="title">{{ section.title | safe }}</h1>
@@ -14,4 +14,4 @@
         {% endfor %}
     </ul>
 </section>
-{% endblock content %}
+{% endblock main %}
