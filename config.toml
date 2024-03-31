@@ -17,4 +17,5 @@ smart_punctuation = true
 [extra]
 chart = false
 katex = false
+mapbox_gl = false
 mermaid = false
