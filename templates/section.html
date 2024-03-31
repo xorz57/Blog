@@ -5,11 +5,11 @@
     <div class="hero-body">
         <div class="container has-text-justified">
             {% if section.title %}
-            <h1 class="title">{{ section.title | safe }}</h1>
+            <p class="title is-1">{{ section.title | safe }}</p>
             {% endif %}
 
             {% if section.description %}
-            <h2 class="subtitle">{{ section.description | safe }}</h2>
+            <p class="subtitle is-3">{{ section.description | safe }}</p>
             {% endif %}
 
             <ul>
