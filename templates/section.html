@@ -1,21 +1,25 @@
 {% extends "base.html" %}
 
 {% block main %}
-<section class="section">
-    {% if section.title %}
-    <h1 class="title">{{ section.title | safe }}</h1>
-    {% endif %}
+<section class="hero is-fullheight-with-navbar">
+    <div class="hero-body">
+        <div class="container">
+            {% if section.title %}
+            <h1 class="title">{{ section.title | safe }}</h1>
+            {% endif %}
 
-    {% if section.description %}
-    <h2 class="subtitle">{{ section.description | safe }}</h2>
-    {% endif %}
+            {% if section.description %}
+            <h2 class="subtitle">{{ section.description | safe }}</h2>
+            {% endif %}
 
-    <ul>
-        {% for page in section.pages %}
-        <li>
-            <a href="{{ page.permalink | safe }}">{{ page.date | safe }} {{ page.title | safe }}</a>
-        </li>
-        {% endfor %}
-    </ul>
+            <ul>
+                {% for page in section.pages %}
+                <li>
+                    <a href="{{ page.permalink | safe }}">{{ page.date | safe }} {{ page.title | safe }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
 </section>
 {% endblock main %}
