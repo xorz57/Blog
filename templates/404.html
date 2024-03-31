@@ -1,13 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section class="section">
-    <div class="container">
-        <div class="has-text-centered">
-            <h1 class="title">HTTP 404</h1>
-            <p class="subtitle">
-                Oops! This page seems to have gone on vacation. We'll send a postcard when it returns!
-            </p>
+<section class="hero is-fullheight-with-navbar">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <p class="title is-size-1">404</p>
+            <p class="subtitle is-size-2">Page Not Found</p>
+            <a href="{{ config.base_url }}" class="button">Go Home</a>
         </div>
     </div>
 </section>
