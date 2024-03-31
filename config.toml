@@ -15,6 +15,9 @@ render_emoji = true
 smart_punctuation = true
 
 [extra]
+navbar_items = [
+    { title = "Posts", url = "{{ get_url(path='posts') }}", icon = "fas fa-file-alt" }
+]
 status = "Software Engineer"
 chart = false
 katex = false

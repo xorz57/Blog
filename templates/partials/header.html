@@ -16,12 +16,14 @@
 
     <div class="navbar-menu" id="navbar_menu">
         <div class="navbar-start">
-            <a class="navbar-item" href="{{ get_url(path='posts') }}">
+            {% for item in config.extra.navbar_items %}
+            <a class="navbar-item" href="{{ item.url }}">
                 <span class="icon">
-                    <i class="fas fa-file-alt" aria-hidden="true"></i>
+                    <i class="{{ item.icon }}" aria-hidden="true"></i>
                 </span>
-                <span>Posts</span>
+                <span>{{ item.title }}</span>
             </a>
+            {% endfor %}
         </div>
 
         <div class="navbar-end">
