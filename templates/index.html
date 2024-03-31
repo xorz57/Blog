@@ -2,6 +2,10 @@
 
 {% block main %}
 <section class="section">
-    {{ section.content | safe }}
+    {% if section.content %}
+    <div class="content">
+        {{ section.content | safe }}
+    </div>
+    {% endif %}
 </section>
 {% endblock main %}
