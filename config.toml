@@ -1,7 +1,7 @@
 base_url = "https://xorz57.pages.dev"
 title = "xorz57"
 description = "xorz57's Blog"
-author = "xorz57"
+author = "George Fotopoulos"
 compile_sass = false
 minify_html = true
 build_search_index = false
@@ -15,6 +15,7 @@ render_emoji = true
 smart_punctuation = true
 
 [extra]
+status = "Software Engineer"
 chart = false
 katex = false
 mapbox_gl = false

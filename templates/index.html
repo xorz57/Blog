@@ -4,10 +4,17 @@
 <section class="hero is-fullheight-with-navbar">
     <div class="hero-body">
         <div class="container has-text-centered">
-            {% if config.author %}
-            <p class="title is-size-1">{{ config.author | safe }}</p>
+            {% if config.title %}
+            <p class="title is-1">{{ config.title | safe }}</p>
             {% endif %}
-            <p class="subtitle is-size-2">Software Engineer</p>
+
+            {% if config.author %}
+            <p class="subtitle is-3">{{ config.author | safe }}</p>
+            {% endif %}
+
+            {% if config.extra.status %}
+            <p class="subtitle is-3">{{ config.extra.status | safe }}</p>
+            {% endif %}
         </div>
     </div>
 </section>
