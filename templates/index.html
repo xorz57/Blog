@@ -13,6 +13,21 @@
     {% if config.extra.status %}
     <p class="title is-3 has-text-primary">{{ config.extra.status | safe }}</p>
     {% endif %}
+
+    <div class="buttons is-centered">
+        <a class="button is-primary is-rounded" href="https://github.com/xorz57" target="_blank">
+            <span class="icon">
+                <i class="fab fa-github"></i>
+            </span>
+            <span>GitHub</span>
+        </a>
+        <a class="button is-link is-rounded" href="https://www.linkedin.com/in/xorz57" target="_blank">
+            <span class="icon">
+                <i class="fab fa-linkedin"></i>
+            </span>
+            <span>LinkedIn</span>
+        </a>
+    </div>
 </div>
 
 {% endblock main %}
