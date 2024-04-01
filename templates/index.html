@@ -1,18 +1,20 @@
 {% extends "base.html" %}
 
 {% block main %}
-<div class="container has-text-centered" data-barba="container" data-barba-namespace="index">
-    {% if config.title %}
-    <p class="title is-1">{{ config.title | safe }}</p>
-    {% endif %}
+<div class="container" data-barba="container" data-barba-namespace="index">
+    <section class="section has-text-centered">
+        {% if config.title %}
+        <p class="title is-1">{{ config.title | safe }}</p>
+        {% endif %}
 
-    {% if config.author %}
-    <p class="subtitle is-3">{{ config.author | safe }}</p>
-    {% endif %}
+        {% if config.author %}
+        <p class="subtitle is-3">{{ config.author | safe }}</p>
+        {% endif %}
 
-    {% if config.extra.status %}
-    <p class="title is-3 has-text-primary">{{ config.extra.status | safe }}</p>
-    {% endif %}
+        {% if config.extra.status %}
+        <p class="title is-3">{{ config.extra.status | safe }}</p>
+        {% endif %}
+    </section>
 
     <div class="buttons is-centered">
         {% for item in config.extra.social_items %}
