@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block main %}
-<div class="container">
+<div class="container" data-barba="container" data-barba-namespace="section">
     {% if section.title %}
     <p class="title is-1">{{ section.title | safe }}</p>
     {% endif %}

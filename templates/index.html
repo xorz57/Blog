@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block main %}
-<div class="container has-text-centered">
+<div class="container has-text-centered" data-barba="container" data-barba-namespace="index">
     {% if config.title %}
     <p class="title is-1">{{ config.title | safe }}</p>
     {% endif %}
