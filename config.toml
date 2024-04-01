@@ -16,7 +16,12 @@ smart_punctuation = true
 
 [extra]
 navbar_items = [
-    { title = "Posts", url = "/posts", icon = "fas fa-file-alt" }
+    { title = "Posts", url = "/posts", icon = "fas fa-file" }
+]
+social_items = [
+    { title = "GitHub", url = "https://github.com/xorz57", icon = "fab fa-github" },
+    { title = "LinkedIn", url = "https://www.linkedin.com/in/xorz57", icon = "fab fa-linkedin" },
+    { title = "Email", url = "mailto:xorz57@gmail.com", icon = "fas fa-envelope" }
 ]
 status = "Software Engineer"
 chart = false

@@ -15,30 +15,14 @@
     {% endif %}
 
     <div class="buttons is-centered">
-        <a class="button is-rounded" href="https://github.com/xorz57">
+        {% for item in config.extra.social_items %}
+        <a class="button is-rounded" href="{{ item.url | safe }}">
             <span class="icon">
-                <i class="fab fa-github"></i>
+                <i class="{{ item.icon }}"></i>
             </span>
-            <span>GitHub</span>
+            <span>{{ item.title }}</span>
         </a>
-        <a class="button is-rounded" href="https://www.linkedin.com/in/xorz57">
-            <span class="icon">
-                <i class="fab fa-linkedin"></i>
-            </span>
-            <span>LinkedIn</span>
-        </a>
-        <a class="button is-rounded" href="https://t.me/xorz57">
-            <span class="icon">
-                <i class="fab fa-telegram"></i>
-            </span>
-            <span>Telegram</span>
-        </a>
-        <a class="button is-rounded" href="mailto:xorz57@gmail.com">
-            <span class="icon">
-                <i class="fas fa-envelope"></i>
-            </span>
-            <span>Email</span>
-        </a>
+        {% endfor %}
     </div>
 </div>
 
