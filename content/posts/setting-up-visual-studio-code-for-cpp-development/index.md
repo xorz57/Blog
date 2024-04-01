@@ -20,7 +20,7 @@ title = "Setting up Visual Studio Code for C++ Development"
 
 1. Press `Ctrl` + `Shift` + `P`
 2. Type `user settings json`
-3. Press `enter`
+3. Press `Enter`
 4. Replace the contents of `settings.json` with the following
 
 ```json
