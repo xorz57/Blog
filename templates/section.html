@@ -1,37 +1,33 @@
 {% extends "base.html" %}
 
 {% block main %}
-<section class="hero is-fullheight-with-navbar">
-    <div class="hero-body">
-        <div class="container">
-            {% if section.title %}
-            <p class="title is-1">{{ section.title | safe }}</p>
-            {% endif %}
+<div class="container">
+    {% if section.title %}
+    <p class="title is-1">{{ section.title | safe }}</p>
+    {% endif %}
 
-            {% if section.description %}
-            <p class="subtitle is-3">{{ section.description | safe }}</p>
-            {% endif %}
+    {% if section.description %}
+    <p class="subtitle is-3">{{ section.description | safe }}</p>
+    {% endif %}
 
-            {% for page in section.pages %}
-            <div class="block">
-                <a href="{{ page.permalink | safe }}">
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="content">
-                                {% if page.title %}
-                                <p class="title is-4">{{ page.title | safe }}</p>
-                                {% endif %}
+    {% for page in section.pages %}
+    <div class="block">
+        <a href="{{ page.permalink | safe }}">
+            <div class="card">
+                <div class="card-content">
+                    <div class="content">
+                        {% if page.title %}
+                        <p class="title is-4">{{ page.title | safe }}</p>
+                        {% endif %}
 
-                                {% if page.description %}
-                                <p class="subtitle is-6">{{ page.description | safe }}</p>
-                                {% endif %}
-                            </div>
-                        </div>
+                        {% if page.description %}
+                        <p class="subtitle is-6">{{ page.description | safe }}</p>
+                        {% endif %}
                     </div>
-                </a>
+                </div>
             </div>
-            {% endfor %}
-        </div>
+        </a>
     </div>
-</section>
+    {% endfor %}
+</div>
 {% endblock main %}

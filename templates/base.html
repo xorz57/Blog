@@ -62,8 +62,12 @@
     </header>
 
     <main>
-        {% block main %}
-        {% endblock main %}
+        <section class="hero is-fullheight-with-navbar">
+            <div class="hero-body">
+                {% block main %}
+                {% endblock main %}
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
