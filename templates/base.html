@@ -88,10 +88,12 @@
     <!-- End Mermaid.js -->
     {% endif %}
 
+    {% if config.extra.analytics.cloudflare %}
     <!-- Cloudflare Web Analytics -->
     <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
-        data-cf-beacon='{"token": "6caeba05d99b4eb8b248b937ce3a13ad"}'></script>
+        data-cf-beacon='{"token": "{{ config.extra.analytics.cloudflare }}"}'></script>
     <!-- End Cloudflare Web Analytics -->
+    {% endif %}
 </body>
 
 </html>
