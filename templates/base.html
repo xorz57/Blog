@@ -31,10 +31,6 @@
     <link rel="alternate" href="{{ get_url(path='atom.xml') }}" type="application/atom+xml" title="Atom">
     {% endif %}
 
-    <!-- Barba.js -->
-    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
-    <!-- End Barba.js -->
-
     {% if config.extra.katex %}
     <!-- Katex -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css"
@@ -73,7 +69,7 @@
     <link rel="icon" href="{{ get_url(path='favicon.svg') }}">
 </head>
 
-<body class="has-navbar-fixed-top" data-barba="wrapper">
+<body class="has-navbar-fixed-top">
     <header>
         {% include "partials/header.html" %}
     </header>
@@ -90,21 +86,6 @@
     <footer class="footer">
         {% include "partials/footer.html" %}
     </footer>
-
-    <!-- Barba.js -->
-    <script>
-        barba.init({
-            transitions: [{
-                name: 'default-transition',
-                leave() { },
-                enter() { }
-            }, {
-                name: 'self',
-                enter() { }
-            }]
-        });
-    </script>
-    <!-- End Barba.js -->
 
     {% if config.extra.chart %}
     <!-- Chart.js -->
