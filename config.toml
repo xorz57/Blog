@@ -22,7 +22,6 @@ social_items = [
     { title = "GitHub", url = "https://github.com/xorz57", icon = "fab fa-github" },
     { title = "LinkedIn", url = "https://www.linkedin.com/in/xorz57", icon = "fab fa-linkedin" }
 ]
-status = "Software Engineer"
 chart = false
 katex = false
 mapbox_gl = false
@@ -31,3 +30,6 @@ mermaid = false
 [extra.analytics]
 cloudflare = "6caeba05d99b4eb8b248b937ce3a13ad"
 google = "G-3RMCRXW1XD"
+
+[extra.profile]
+status = "Software Engineer"
