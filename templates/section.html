@@ -13,15 +13,13 @@
     {% for page in section.pages %}
     <div class="block">
         <a href="{{ page.permalink | safe }}">
-            <div class="box">
-                {% if page.title %}
-                <p class="title is-4">{{ page.title | safe }}</p>
-                {% endif %}
+            {% if page.title %}
+            <p class="title is-4">{{ page.title | safe }}</p>
+            {% endif %}
 
-                {% if page.description %}
-                <p class="subtitle is-6">{{ page.description | safe }}</p>
-                {% endif %}
-            </div>
+            {% if page.description %}
+            <p class="subtitle is-6">{{ page.description | safe }}</p>
+            {% endif %}
         </a>
     </div>
     {% endfor %}
