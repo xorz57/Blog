@@ -20,8 +20,7 @@ navbar_items = [
 ]
 social_items = [
     { title = "GitHub", url = "https://github.com/xorz57", icon = "fab fa-github" },
-    { title = "LinkedIn", url = "https://www.linkedin.com/in/xorz57", icon = "fab fa-linkedin" },
-    { title = "Email", url = "mailto:xorz57@gmail.com", icon = "fas fa-envelope" }
+    { title = "LinkedIn", url = "https://www.linkedin.com/in/xorz57", icon = "fab fa-linkedin" }
 ]
 status = "Software Engineer"
 chart = false
