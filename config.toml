@@ -34,3 +34,16 @@ google = "G-3RMCRXW1XD"
 
 [extra.profile]
 status = "Software Engineer"
+
+[extra.giscus]
+repo = "xorz57/Blog"
+repo_id = "R_kgDOLl8F9A"
+category = "Announcements"
+category_id = "DIC_kwDOLl8F9M4CeZsu"
+mapping = "pathname"
+strict = "0"
+reactions_enabled = "1"
+emit_metadata = "0"
+input_position = "bottom"
+theme = "preferred_color_scheme"
+lang = "en"

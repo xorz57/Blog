@@ -15,5 +15,19 @@
         {{ page.content | safe }}
     </div>
     {% endif %}
+
+    {% if config.extra.giscus %}
+    <script src="https://giscus.app/client.js" data-repo="{{ config.extra.giscus.repo | safe }}"
+        data-repo-id="{{ config.extra.giscus.repo_id | safe }}"
+        data-category="{{ config.extra.giscus.category | safe }}"
+        data-category-id="{{ config.extra.giscus.category_id | safe }}"
+        data-mapping="{{ config.extra.giscus.mapping | safe }}" data-strict="{{ config.extra.giscus.strict | safe }}"
+        data-reactions-enabled="{{ config.extra.giscus.reactions_enabled | safe }}"
+        data-emit-metadata="{{ config.extra.giscus.emit_metadata | safe }}"
+        data-input-position="{{ config.extra.giscus.input_position | safe }}"
+        data-theme="{{ config.extra.giscus.theme | safe }}" data-lang="{{ config.extra.giscus.lang | safe }}"
+        crossorigin="anonymous" async>
+        </script>
+    {% endif %}
 </div>
 {% endblock main %}
