@@ -20,9 +20,9 @@
         {% for item in config.extra.social_items %}
         <a class="button is-rounded" href="{{ item.url | safe }}">
             <span class="icon">
-                <i class="{{ item.icon }}"></i>
+                <i class="{{ item.icon | safe }}"></i>
             </span>
-            <span>{{ item.title }}</span>
+            <span>{{ item.title | safe }}</span>
         </a>
         {% endfor %}
     </div>
