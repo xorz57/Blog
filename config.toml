@@ -29,6 +29,7 @@ mermaid = false
 
 [extra.analytics]
 cloudflare = "6caeba05d99b4eb8b248b937ce3a13ad"
+goatcounter = "https://xorz57.goatcounter.com/count"
 google = "G-3RMCRXW1XD"
 
 [extra.profile]

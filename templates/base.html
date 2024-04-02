@@ -130,6 +130,13 @@
     <!-- End Mermaid.js -->
     {% endif %}
 
+    {% if config.extra.analytics.goatcounter %}
+    <!-- GoatCounter -->
+    <script data-goatcounter="{{ config.extra.analytics.goatcounter | safe }}" async
+        src="//gc.zgo.at/count.js"></script>
+    <!-- End GoatCounter -->
+    {% endif %}
+
     {% if config.extra.analytics.cloudflare %}
     <!-- Cloudflare Web Analytics -->
     <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
