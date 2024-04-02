@@ -58,6 +58,19 @@
     {% endif %}
 
     <link rel="icon" href="{{ get_url(path='favicon.svg') }}">
+
+    {% if config.extra.analytics.google %}
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.extra.analytics.google }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', '{{ config.extra.analytics.google }}');
+    </script>
+    <!-- End Google Analytics -->
+    {% endif %}
 </head>
 
 <body data-barba="wrapper">
@@ -117,19 +130,6 @@
     <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
         data-cf-beacon='{"token": "{{ config.extra.analytics.cloudflare }}"}'></script>
     <!-- End Cloudflare Web Analytics -->
-    {% endif %}
-
-    {% if config.extra.analytics.google %}
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.extra.analytics.google }}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', '{{ config.extra.analytics.google }}');
-    </script>
-    <!-- End Google Analytics -->
     {% endif %}
 </body>
 
