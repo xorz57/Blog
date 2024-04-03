@@ -1,7 +1,24 @@
 +++
+title = "C++ Learning Materials"
 date = 2024-03-26
 draft = false
-title = "C++ Learning Materials"
+
+[taxonomies]
+categories = ["programming"]
+tags = ["c++"]
+
+[extra]
+lang = "en"
+toc = true
+comment = true
+copy = true
+math = false
+mermaid = false
+outdate_alert = true
+outdate_alert_days = 120
+display_tags = true
+truncate_summary = false
+featured = false
 +++
 
 ## YouTube Channels

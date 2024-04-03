@@ -1,7 +1,24 @@
 +++
+title = "Setting up Visual Studio Code for C++ Development"
 date = 2024-04-01
 draft = false
-title = "Setting up Visual Studio Code for C++ Development"
+
+[taxonomies]
+categories = ["programming"]
+tags = ["c++", "vscode"]
+
+[extra]
+lang = "en"
+toc = true
+comment = true
+copy = true
+math = false
+mermaid = false
+outdate_alert = true
+outdate_alert_days = 120
+display_tags = true
+truncate_summary = false
+featured = false
 +++
 
 ## Fonts
@@ -19,7 +36,7 @@ title = "Setting up Visual Studio Code for C++ Development"
 ## User Settings (JSON)
 
 1. Press `Ctrl` + `Shift` + `P`
-2. Type `user settings json`
+2. Type `User Settings (JSON)`
 3. Press `Enter`
 4. Replace the contents of `settings.json` with the following
 
