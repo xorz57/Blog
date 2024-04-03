@@ -64,7 +64,8 @@ int main() {
 ```
 
 ### Notes
-- Thread Unsafe
+- The instance is **dynamically initialized**
+- The function `GetInstance()` is **not thread safe**
 
 ## Implementation 2
 
@@ -113,7 +114,8 @@ int main() {
 ```
 
 ### Notes
-- Thread Safe
+- The instance is **dynamically initialized**
+- The function `GetInstance()` is **thread safe**
 
 ## Implementation 3
 
@@ -150,5 +152,5 @@ int main() {
 ```
 
 ### Notes
-- [Static Initialization Order Fiasco](https://en.cppreference.com/w/cpp/language/siof)
-- Thread Safe
+- Instance is **statically initialized** [Static Initialization Order Fiasco](https://en.cppreference.com/w/cpp/language/siof)
+- The function `GetInstance()` is **thread safe**
