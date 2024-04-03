@@ -1,10 +1,19 @@
 [[project]]
 name = "Morse Code Converter"
-desc = "Qt Application written in C++"
+desc = "Application written in C++"
 tags = ["cpp", "qt"]
 img = ""
 links = [
   { name = "GitHub", url = "https://github.com/xorz57/MorseCodeConverter" },
+]
+
+[[project]]
+name = "Port Scanner"
+desc = "Application written in C++"
+tags = ["cpp", "boost"]
+img = ""
+links = [
+  { name = "GitHub", url = "https://github.com/xorz57/PortScanner" },
 ]
 
 [[project]]
