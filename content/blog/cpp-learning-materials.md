@@ -22,6 +22,8 @@ featured = false
 +++
 
 ## Websites
+- [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
+- [C++ Patterns](https://cpppatterns.com/)
 - [C++ Reference](https://en.cppreference.com/w/)
 - [Learn C++](https://www.learncpp.com/)
 
