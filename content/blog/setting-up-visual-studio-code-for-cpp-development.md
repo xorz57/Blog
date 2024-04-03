@@ -5,7 +5,7 @@ draft = false
 
 [taxonomies]
 categories = ["programming"]
-tags = ["c++", "vscode"]
+tags = ["cpp", "vscode"]
 
 [extra]
 lang = "en"
