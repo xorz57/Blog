@@ -46,8 +46,8 @@ bio = "Software Engineer"
 avatar = "img/avatar.webp"
 links = [
     { name = "GitHub", icon = "github", url = "https://github.com/xorz57" },
-    { name = "Twitter", icon = "twitter", url = "https://twitter.com/xorz57" },
     { name = "Email", icon = "email", url = "mailto:xorz57@gmail.com" },
+    { name = "Linkedin", icon = "linkedin", url = "https://www.linkedin.com/in/xorz57" },
 ]
 
 homepage_layout = "about"
