@@ -21,6 +21,10 @@ truncate_summary = false
 featured = false
 +++
 
+## Websites
+- [C++ Reference](https://en.cppreference.com/w/)
+- [Learn C++](https://www.learncpp.com/)
+
 ## YouTube Channels
 
 - [C++ Weekly With Jason Turner](https://www.youtube.com/@cppweekly)
