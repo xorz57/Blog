@@ -53,11 +53,11 @@ private:
 Singleton* Singleton::sInstance = nullptr;
 
 int main() {
-    auto singleton1 = Singleton::GetInstance();
-    auto singleton2 = Singleton::GetInstance();
+    auto instance1 = Singleton::GetInstance();
+    auto instance2 = Singleton::GetInstance();
 
-    std::printf("singleton1: %p\n", singleton1);
-    std::printf("singleton2: %p\n", singleton2);
+    std::printf("instance1: %p\n", instance1);
+    std::printf("instance2: %p\n", instance2);
 
     return 0;
 }
@@ -103,11 +103,11 @@ Singleton* Singleton::sInstance = nullptr;
 std::mutex Singleton::sInstanceMutex;
 
 int main() {
-    auto singleton1 = Singleton::GetInstance();
-    auto singleton2 = Singleton::GetInstance();
+    auto instance1 = Singleton::GetInstance();
+    auto instance2 = Singleton::GetInstance();
 
-    std::printf("singleton1: %p\n", singleton1);
-    std::printf("singleton2: %p\n", singleton2);
+    std::printf("instance1: %p\n", instance1);
+    std::printf("instance2: %p\n", instance2);
 
     return 0;
 }
@@ -133,8 +133,8 @@ public:
     Singleton& operator=(Singleton&& other) = delete;
 
     static Singleton* GetInstance() {
-        static Singleton *sInstance = new Singleton();
-        return sInstance;
+        static Singleton *instance = new Singleton();
+        return instance;
     };
 
 private:
@@ -143,11 +143,11 @@ private:
 };
 
 int main() {
-    auto singleton1 = Singleton::GetInstance();
-    auto singleton2 = Singleton::GetInstance();
+    auto instance1 = Singleton::GetInstance();
+    auto instance2 = Singleton::GetInstance();
 
-    std::printf("singleton1: %p\n", singleton1);
-    std::printf("singleton2: %p\n", singleton2);
+    std::printf("instance1: %p\n", instance1);
+    std::printf("instance2: %p\n", instance2);
 
     return 0;
 }
@@ -181,11 +181,11 @@ private:
 };
 
 int main() {
-    auto &singleton1 = Singleton::GetInstance();
-    auto &singleton2 = Singleton::GetInstance();
+    auto &instance1 = Singleton::GetInstance();
+    auto &instance2 = Singleton::GetInstance();
 
-    std::printf("singleton1: %p\n", &singleton1);
-    std::printf("singleton2: %p\n", &singleton2);
+    std::printf("instance1: %p\n", &instance1);
+    std::printf("instance2: %p\n", &instance2);
 
     return 0;
 }
