@@ -123,6 +123,46 @@ int main() {
 
 ```cpp
 #include <cstdio>
+
+class Singleton {
+public:
+    Singleton(const Singleton& other) = delete;
+    Singleton(Singleton&& other) = delete;
+
+    Singleton& operator=(const Singleton& other) = delete;
+    Singleton& operator=(Singleton&& other) = delete;
+
+    static Singleton* GetInstance() {
+        static Singleton *sInstance = new Singleton();
+        return sInstance;
+    };
+
+private:
+    Singleton() = default;
+    ~Singleton() = default;
+};
+
+int main() {
+    auto singleton1 = Singleton::GetInstance();
+    auto singleton2 = Singleton::GetInstance();
+
+    std::printf("singleton1: %p\n", singleton1);
+    std::printf("singleton2: %p\n", singleton2);
+
+    return 0;
+}
+```
+
+### Notes
+- The instance is **dynamically initialized**
+- The function `GetInstance()` is **thread safe**
+
+## Implementation 4
+
+### Source Code
+
+```cpp
+#include <cstdio>
 #include <mutex>
 
 class Singleton {
