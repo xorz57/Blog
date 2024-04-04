@@ -17,6 +17,15 @@ links = [
 ]
 
 [[project]]
+name = "Logger"
+desc = "Library written in C++"
+tags = ["cpp"]
+img = ""
+links = [
+  { name = "GitHub", url = "https://github.com/xorz57/Logger" },
+]
+
+[[project]]
 name = "KD Tree"
 desc = "Library written in Scala"
 tags = ["scala", "data-structures"]
