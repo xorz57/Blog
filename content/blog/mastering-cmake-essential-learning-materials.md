@@ -23,5 +23,6 @@ featured = false
 
 ## Websites
 
+- [CMake Reference Documentation](https://cmake.org/cmake/help/latest/)
 - [Modern CMake](https://cliutils.gitlab.io/modern-cmake/)
 - [More Modern CMake](https://hsf-training.github.io/hsf-training-cmake-webpage/)
