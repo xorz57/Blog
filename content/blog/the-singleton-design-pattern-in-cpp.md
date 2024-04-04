@@ -21,7 +21,7 @@ truncate_summary = false
 featured = false
 +++
 
-## Implementation 1
+## Thread-Unsafe Implementation
 
 ### Source Code
 
@@ -67,7 +67,7 @@ int main() {
 - The instance is **dynamically initialized**
 - The function `GetInstance()` is **not thread safe**
 
-## Implementation 2
+## Thread-Safe Implementation 1
 
 ### Source Code
 
@@ -117,7 +117,7 @@ int main() {
 - The instance is **dynamically initialized**
 - The function `GetInstance()` is **thread safe**
 
-## Implementation 3
+## Thread-Safe Implementation 2
 
 ### Source Code
 
@@ -157,7 +157,7 @@ int main() {
 - The instance is **dynamically initialized**
 - The function `GetInstance()` is **thread safe**
 
-## Implementation 4
+## Scott Meyers' Implementation
 
 ### Source Code
 
@@ -192,5 +192,5 @@ int main() {
 ```
 
 ### Notes
-- Instance is **statically initialized** [Static Initialization Order Fiasco](https://en.cppreference.com/w/cpp/language/siof)
+- [Static Initialization Order Fiasco](https://en.cppreference.com/w/cpp/language/siof)
 - The function `GetInstance()` is **thread safe**
