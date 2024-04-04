@@ -116,6 +116,7 @@ int main() {
 ### Notes
 - The instance is **dynamically initialized**
 - The function `GetInstance()` is **thread safe**
+- Using `std::lock_guard` is **slow**
 
 ## Thread-Safe Implementation 2
 
