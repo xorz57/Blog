@@ -4,8 +4,8 @@ date = 2024-04-01
 draft = false
 
 [taxonomies]
-categories = ["programming"]
-tags = ["cpp", "vscode"]
+categories = [ "programming" ]
+tags = [ "cpp", "vscode" ]
 
 [extra]
 lang = "en"

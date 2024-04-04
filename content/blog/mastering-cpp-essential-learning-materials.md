@@ -1,11 +1,11 @@
 +++
-title = "C++ Learning Materials"
+title = "Mastering C++: Essential Learning Materials"
 date = 2024-03-26
 draft = false
 
 [taxonomies]
-categories = ["programming"]
-tags = ["cpp"]
+categories = [ "programming" ]
+tags = [ "cpp", "learning-materials" ]
 
 [extra]
 lang = "en"

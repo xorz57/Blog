@@ -1,11 +1,11 @@
 +++
-title = "Singleton in C++"
+title = "The Singleton Design Pattern in C++"
 date = 2024-04-03
 draft = false
 
 [taxonomies]
-categories = ["programming"]
-tags = ["cpp", "design-patterns"]
+categories = [ "programming" ]
+tags = [ "cpp", "design-patterns" ]
 
 [extra]
 lang = "en"

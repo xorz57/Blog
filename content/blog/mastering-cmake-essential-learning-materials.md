@@ -1,11 +1,11 @@
 +++
-title = "CMake Learning Materials"
+title = "Mastering CMake: Essential Learning Materials"
 date = 2024-03-27
 draft = false
 
 [taxonomies]
-categories = ["programming"]
-tags = ["cmake"]
+categories = [ "programming" ]
+tags = [ "cmake", "learning-materials" ]
 
 [extra]
 lang = "en"
