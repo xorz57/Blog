@@ -1,6 +1,6 @@
 [[project]]
 name = "Morse Code Converter"
-desc = "Application written in C++"
+desc = "Qt Application written in C++"
 tags = ["cpp", "qt"]
 img = ""
 links = [
