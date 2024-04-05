@@ -21,7 +21,7 @@ truncate_summary = false
 featured = false
 +++
 
-## Thread-Unsafe Implementation
+## Implementation 1
 
 ### Source Code
 
@@ -67,7 +67,7 @@ int main() {
 - The instance is **dynamically initialized**
 - The function `GetInstance()` is **not thread safe**
 
-## Thread-Safe Implementation 1
+## Implementation 2
 
 ### Source Code
 
@@ -118,7 +118,7 @@ int main() {
 - The function `GetInstance()` is **thread safe**
 - Using `std::lock_guard` is **slow**
 
-## Thread-Safe Implementation 2
+## Implementation 3
 
 ### Source Code
 
@@ -158,7 +158,7 @@ int main() {
 - The instance is **dynamically initialized**
 - The function `GetInstance()` is **thread safe**
 
-## Scott Meyers' Implementation
+## Implementation 4
 
 ### Source Code
 
