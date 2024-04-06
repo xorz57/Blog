@@ -26,12 +26,30 @@ links = [
 ]
 
 [[project]]
+name = "Stopwatch"
+desc = "Library written in C++"
+tags = [ "cpp" ]
+img = ""
+links = [
+  { name = "GitHub", url = "https://github.com/xorz57/Stopwatch" },
+]
+
+[[project]]
 name = "Logger"
 desc = "Library written in C++"
 tags = [ "cpp" ]
 img = ""
 links = [
   { name = "GitHub", url = "https://github.com/xorz57/Logger" },
+]
+
+[[project]]
+name = "Pathfinder"
+desc = "Application written in Python"
+tags = [ "python", "algorithms" ]
+img = ""
+links = [
+  { name = "GitHub", url = "https://github.com/xorz57/Pathfinder" },
 ]
 
 [[project]]
