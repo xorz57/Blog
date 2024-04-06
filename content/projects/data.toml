@@ -1,7 +1,7 @@
 [[project]]
 name = "Morse Code Converter"
 desc = "Qt Application written in C++"
-tags = ["cpp", "qt"]
+tags = [ "cpp", "qt" ]
 img = ""
 links = [
   { name = "GitHub", url = "https://github.com/xorz57/MorseCodeConverter" },
@@ -10,7 +10,7 @@ links = [
 [[project]]
 name = "Breakout"
 desc = "Game written in C++"
-tags = ["cpp", "sdl"]
+tags = [ "cpp", "game-programming", "sdl" ]
 img = ""
 links = [
   { name = "GitHub", url = "https://github.com/xorz57/Breakout" },
@@ -19,25 +19,16 @@ links = [
 [[project]]
 name = "F1 Telemetry Client"
 desc = "Library written in Rust"
-tags = ["rust", "network-programming"]
+tags = [ "rust", "network-programming" ]
 img = ""
 links = [
   { name = "GitHub", url = "https://github.com/xorz57/f1-telemetry-client" },
 ]
 
 [[project]]
-name = "Port Scanner"
-desc = "Application written in C++"
-tags = ["cpp", "boost"]
-img = ""
-links = [
-  { name = "GitHub", url = "https://github.com/xorz57/PortScanner" },
-]
-
-[[project]]
 name = "Logger"
 desc = "Library written in C++"
-tags = ["cpp"]
+tags = [ "cpp" ]
 img = ""
 links = [
   { name = "GitHub", url = "https://github.com/xorz57/Logger" },
@@ -46,7 +37,7 @@ links = [
 [[project]]
 name = "KD Tree"
 desc = "Library written in Scala"
-tags = ["scala", "data-structures"]
+tags = [ "scala", "data-structures" ]
 img = ""
 links = [
   { name = "GitHub", url = "https://github.com/xorz57/KDTree" },
