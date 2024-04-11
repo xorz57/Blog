@@ -50,7 +50,11 @@ featured = false
     "explorer.sortOrder": "type",
     "git.autofetch": true,
     "workbench.editor.enablePreview": false,
-    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
-    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+    "cmake.configureArgs": [
+        "-DCMAKE_TOOLCHAIN_FILE=D:/vcpkg/scripts/buildsystems/vcpkg.cmake"
+    ],
+    "cmake.generator": "Ninja",
+    "cmake.configureOnOpen": true,
+    "cmake.options.statusBarVisibility": "visible",
 }
 ```
