@@ -33,12 +33,27 @@ featured = false
 - [Monokai Pro](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode)
 - [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
 
+## VCPKG
+
+1. Open `Powershell`
+
+2. Copy & Paste the following
+
+```ps1
+git clone https://github.com/microsoft/vcpkg.git C:/vcpkg
+C:/vcpkg/bootstrap-vcpkg.bat
+C:/vcpkg/vcpkg.exe integrate install
+```
+
 ## User Settings (JSON)
 
 1. Press `Ctrl` + `Shift` + `P`
+
 2. Type `User Settings (JSON)`
+
 3. Press `Enter`
-4. Replace the contents of `settings.json` with the following
+
+4. Copy & Paste the following
 
 ```json
 {
@@ -51,10 +66,12 @@ featured = false
     "git.autofetch": true,
     "workbench.editor.enablePreview": false,
     "cmake.configureArgs": [
-        "-DCMAKE_TOOLCHAIN_FILE=D:/vcpkg/scripts/buildsystems/vcpkg.cmake"
+        "-DCMAKE_TOOLCHAIN_FILE=C:/vcpkg/scripts/buildsystems/vcpkg.cmake"
     ],
     "cmake.generator": "Ninja",
     "cmake.configureOnOpen": true,
     "cmake.options.statusBarVisibility": "visible",
 }
 ```
+
+5. Press `Ctrl` + `S`
