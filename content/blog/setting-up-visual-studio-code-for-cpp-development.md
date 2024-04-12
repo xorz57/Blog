@@ -33,7 +33,7 @@ featured = false
 - [Monokai Pro](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode)
 - [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
 
-## VCPKG
+## Package Manager
 
 1. Open `Powershell`
 
