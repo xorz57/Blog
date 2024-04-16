@@ -1,13 +1,4 @@
 [[project]]
-name = "Morse Code Converter"
-desc = "Qt Application written in C++"
-tags = [ "cpp", "qt" ]
-img = ""
-links = [
-  { name = "GitHub", url = "https://github.com/xorz57/MorseCodeConverter" },
-]
-
-[[project]]
 name = "Breakout"
 desc = "Game written in C++"
 tags = [ "cpp", "game-programming", "sdl" ]
@@ -17,12 +8,39 @@ links = [
 ]
 
 [[project]]
+name = "Morse Code Converter"
+desc = "Qt Application written in C++"
+tags = [ "cpp", "qt" ]
+img = ""
+links = [
+  { name = "GitHub", url = "https://github.com/xorz57/MorseCodeConverter" },
+]
+
+[[project]]
 name = "F1 Telemetry Client"
 desc = "Library written in Rust"
 tags = [ "rust", "network-programming" ]
 img = ""
 links = [
   { name = "GitHub", url = "https://github.com/xorz57/f1-telemetry-client" },
+]
+
+[[project]]
+name = "Particle Physics"
+desc = "Application written in C++"
+tags = [ "cpp", "physics-programming", "sfml" ]
+img = ""
+links = [
+  { name = "GitHub", url = "https://github.com/xorz57/ParticlePhysics" },
+]
+
+[[project]]
+name = "Port Scanner"
+desc = "Application written in C++"
+tags = [ "cpp", "network-programming", "boost" ]
+img = ""
+links = [
+  { name = "GitHub", url = "https://github.com/xorz57/PortScanner" },
 ]
 
 [[project]]
