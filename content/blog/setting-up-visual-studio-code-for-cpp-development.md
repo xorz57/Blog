@@ -30,8 +30,8 @@ featured = false
 ## Extensions
 
 - [C/C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack)
-- [Monokai Pro](https://marketplace.visualstudio.com/items?itemName=monokai.theme-monokai-pro-vscode)
-- [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
+- [Gruvbox Concoctis](https://marketplace.visualstudio.com/items?itemName=wheredoesyourmindgo.gruvbox-concoctis)
+- [Material Product Icons](https://marketplace.visualstudio.com/items?itemName=PKief.material-product-icons)
 
 ## Package Manager
 
@@ -65,12 +65,18 @@ C:/vcpkg/vcpkg.exe integrate install
     "explorer.sortOrder": "type",
     "git.autofetch": true,
     "workbench.editor.enablePreview": false,
+    "workbench.colorTheme": "gruvboxConcoctis dark hard",
+    "workbench.productIconTheme": "material-product-icons",
     "cmake.configureArgs": [
-        "-DCMAKE_TOOLCHAIN_FILE=C:/vcpkg/scripts/buildsystems/vcpkg.cmake"
+        "-DCMAKE_TOOLCHAIN_FILE=C:/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "-DVCPKG_TARGET_TRIPLET=x64-windows-static",
+        "--profiling-format=google-trace",
+        "--profiling-output=cmake.json"
     ],
     "cmake.generator": "Ninja",
     "cmake.configureOnOpen": true,
     "cmake.options.statusBarVisibility": "visible",
+    "cmake.showOptionsMovedNotification": false
 }
 ```
 
