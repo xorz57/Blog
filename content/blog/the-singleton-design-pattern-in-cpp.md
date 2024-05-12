@@ -164,7 +164,6 @@ int main() {
 
 ```cpp
 #include <cstdio>
-#include <mutex>
 
 class Singleton {
 public:
