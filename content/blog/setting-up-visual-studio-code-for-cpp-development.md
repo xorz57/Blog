@@ -74,9 +74,7 @@ C:/vcpkg/vcpkg.exe integrate install
         "--profiling-output=cmake.json"
     ],
     "cmake.generator": "Ninja",
-    "cmake.configureOnOpen": true,
-    "cmake.options.statusBarVisibility": "visible",
-    "cmake.showOptionsMovedNotification": false
+    "cmake.configureOnOpen": true
 }
 ```
 
