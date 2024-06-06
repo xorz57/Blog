@@ -29,8 +29,6 @@ A state machine is a computational model used to design systems that can be in o
 
 ## Example
 
-[![](https://mermaid.ink/img/pako:eNp9j89uwjAMxl8l8jmFJg2U5rDT3mA3lIvVmFKJJigkaFD13RdaTVSaNJ8-__n5s0dovSXQcIsY6bPHLuBQ3KVxLMdcLFlRfCxSMM3oTi4KtmVdwmAFZ9jG3juxIsSbkL-E_EOsPeR_HnLlARwGCgP2Nt88vjYYiGcayIDO0tIJ0yUaMG7Ko5ii_3q4FnQMiTikq31_CfqEl1uuXtGBHuEbtKyqjar2u7qpq3onG3Xg8ABdiE2ZQ6hyrxr1aqmJw9P7vEPM_HHWi0nwqTsvyfQDL45sEA?type=png)](https://mermaid.live/edit#pako:eNp9j89uwjAMxl8l8jmFJg2U5rDT3mA3lIvVmFKJJigkaFD13RdaTVSaNJ8-__n5s0dovSXQcIsY6bPHLuBQ3KVxLMdcLFlRfCxSMM3oTi4KtmVdwmAFZ9jG3juxIsSbkL-E_EOsPeR_HnLlARwGCgP2Nt88vjYYiGcayIDO0tIJ0yUaMG7Ko5ii_3q4FnQMiTikq31_CfqEl1uuXtGBHuEbtKyqjar2u7qpq3onG3Xg8ABdiE2ZQ6hyrxr1aqmJw9P7vEPM_HHWi0nwqTsvyfQDL45sEA)
-
 1. The machine starts in `state0`.
 2. In `state0`
     - On `event1`, it transitions to `state1` and performs `action1`.
