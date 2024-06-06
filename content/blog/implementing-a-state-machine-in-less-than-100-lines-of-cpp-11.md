@@ -27,80 +27,6 @@ Explore the full source code on [GitHub](https://github.com/xorz57/StateMachine)
 
 A state machine is a computational model used to design systems that can be in one of a finite number of states at any given time. It consists of a set of states, transitions between those states, and actions that occur as a result of those transitions. The machine begins in an initial state and changes states based on input or events, following predefined rules. State machines are useful for modeling behaviors in various fields such as software development, digital circuit design, and robotics, allowing for clear and organized representation of complex processes and decision logic.
 
-## Example
-
-1. The machine starts in `state0`.
-2. In `state0`
-    - On `event1`, it transitions to `state1` and performs `action1`.
-3. In `state1`
-    - On `event2`, it transitions to `state2` and performs `action2`.
-4. In `state2`
-    - On `event1`, it transitions back to `state1` and performs `action1`.
-
-### States
-
-In C++11, we can use an `enum class` to define the various states of a state machine. This approach provides a clear and type-safe way to represent the possible states the machine can be in. Here’s how we can use an `enum class` to describe the states of our state machine:
-
-```cpp
-enum class state {
-    state0,
-    state1,
-    state2
-};
-```
-
-### Events
-
-Similarly, we can use an `enum class` to define the various events that trigger state transitions in a state machine. Here’s how we can use an `enum class` to describe the events of our state machine:
-
-```cpp
-enum class event {
-    event1,
-    event2
-};
-```
-
-### Actions
-
-In C++11, `lambdas` provide a concise way to define inline functions without needing to declare them separately. When encapsulated within a namespace, `lambdas` can be used effectively to define actions that correspond to specific events or states in our state machine.
-
-```cpp
-namespace action {
-    const auto action1 = []() { std::cout << "action1" << std::endl; };
-    const auto action2 = []() { std::cout << "action2" << std::endl; };
-}// namespace action
-```
-
-### Transition Table
-
-Initializing our transition table.
-
-```cpp
-transition_table_t<state, event> tt{
-        {{state::state0, event::event1}, {action::action1, state::state1}},
-        {{state::state1, event::event2}, {action::action2, state::state2}},
-        {{state::state2, event::event1}, {action::action1, state::state1}},
-};
-```
-
-### State Machine
-
-Initializing our state machine.
-
-```cpp
-state_machine_t<state, event> sm(state::state0, tt);
-```
-
-### Handling Events
-
-Handling the events in our state machine.
-
-```cpp
-sm.handle_event(event::event1);
-sm.handle_event(event::event2);
-sm.handle_event(event::event1);
-```
-
 ## Implementation
 
 ```cpp
@@ -160,4 +86,72 @@ private:
     state_t m_state;
     transition_table_t<state_t, event_t> m_transition_table;
 };
+```
+
+## Example
+
+[![](https://mermaid.ink/img/pako:eNqFkLEOwjAMRH8l8twKkjEDEysTaxYrMW0kkqDgVKqq_juhVWk3PJ2t55PPE9jkCDS8GZmuHruMoR2UiaLWMjyLtr2sUgotaKDIUpwEWvYpygMpd1JtpPqRR0_1zxMaCJQDeldvm76bBrinQAZ0lY4eWJ5swMS5olg43cdoQXMu1EBOpeu3przcHm0bkvOc8m3Nvrxg_gAQi1ZK?type=png)](https://mermaid.live/edit#pako:eNqFkLEOwjAMRH8l8twKkjEDEysTaxYrMW0kkqDgVKqq_juhVWk3PJ2t55PPE9jkCDS8GZmuHruMoR2UiaLWMjyLtr2sUgotaKDIUpwEWvYpygMpd1JtpPqRR0_1zxMaCJQDeldvm76bBrinQAZ0lY4eWJ5swMS5olg43cdoQXMu1EBOpeu3przcHm0bkvOc8m3Nvrxg_gAQi1ZK)
+
+1. The machine starts in `state0`.
+2. In `state0`
+    - On `event1`, it transitions to `state1` and performs `action1`.
+3. In `state1`
+    - On `event2`, it transitions to `state2` and performs `action2`.
+4. In `state2`
+    - On `event1`, it transitions back to `state1` and performs `action1`.
+
+```cpp
+#include "StateMachine/StateMachine.hpp"
+
+#include <iostream>
+
+enum class state {
+    state0,
+    state1,
+    state2
+};
+
+enum class event {
+    event1,
+    event2
+};
+
+static std::string to_string(const state &state) {
+    switch (state) {
+        case state::state0:
+            return "state0";
+        case state::state1:
+            return "state1";
+        case state::state2:
+            return "state2";
+    }
+    return "unknown";
+}
+
+namespace action {
+    const auto action1 = []() { std::cout << "action1" << std::endl; };
+    const auto action2 = []() { std::cout << "action2" << std::endl; };
+}// namespace action
+
+int main() {
+    transition_table_t<state, event> tt{
+            {{state::state0, event::event1}, {action::action1, state::state1}},
+            {{state::state1, event::event2}, {action::action2, state::state2}},
+            {{state::state2, event::event1}, {action::action1, state::state1}},
+    };
+
+    state_machine_t<state, event> sm(state::state0, tt);
+    std::cout << to_string(sm.get_state()) << std::endl;
+
+    sm.handle_event(event::event1);
+    std::cout << to_string(sm.get_state()) << std::endl;
+
+    sm.handle_event(event::event2);
+    std::cout << to_string(sm.get_state()) << std::endl;
+
+    sm.handle_event(event::event1);
+    std::cout << to_string(sm.get_state()) << std::endl;
+
+    return 0;
+}
 ```
