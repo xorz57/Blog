@@ -29,7 +29,7 @@ A state machine is a computational model used to design systems that can be in o
 
 ## Implementations
 
-### Implementation 1
+### Implementation 1 (55 LOC)
 
 ```cpp
 #include <algorithm>
@@ -89,7 +89,7 @@ private:
 };
 ```
 
-### Implementation 2
+### Implementation 2 (90 LOC)
 
 ```cpp
 #include <algorithm>
@@ -184,7 +184,7 @@ private:
 };
 ```
 
-### Implementation 3
+### Implementation 3 (95 LOC)
 
 ```cpp
 #include <algorithm>
