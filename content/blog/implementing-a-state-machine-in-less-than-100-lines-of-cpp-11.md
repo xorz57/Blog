@@ -290,7 +290,7 @@ private:
 
 ### Example 1
 
-![state-machine-1](state-machine-1.svg)
+<img src = "state-machine-1.svg">
 
 1. The machine starts in `state0`.
 2. In `state0`
