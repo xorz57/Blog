@@ -29,7 +29,7 @@ A state machine is a computational model used to design systems that can be in o
 
 ## Example
 
-![mermaid-diagram-2024-06-06-040638](https://github.com/xorz57/StateMachine/assets/84932056/c0399182-3b46-4dfe-9449-d053fc7a074b)
+[![](https://mermaid.ink/img/pako:eNp9j89uwjAMxl8l8jmFJg2U5rDT3mA3lIvVmFKJJigkaFD13RdaTVSaNJ8-__n5s0dovSXQcIsY6bPHLuBQ3KVxLMdcLFlRfCxSMM3oTi4KtmVdwmAFZ9jG3juxIsSbkL-E_EOsPeR_HnLlARwGCgP2Nt88vjYYiGcayIDO0tIJ0yUaMG7Ko5ii_3q4FnQMiTikq31_CfqEl1uuXtGBHuEbtKyqjar2u7qpq3onG3Xg8ABdiE2ZQ6hyrxr1aqmJw9P7vEPM_HHWi0nwqTsvyfQDL45sEA?type=png)](https://mermaid.live/edit#pako:eNp9j89uwjAMxl8l8jmFJg2U5rDT3mA3lIvVmFKJJigkaFD13RdaTVSaNJ8-__n5s0dovSXQcIsY6bPHLuBQ3KVxLMdcLFlRfCxSMM3oTi4KtmVdwmAFZ9jG3juxIsSbkL-E_EOsPeR_HnLlARwGCgP2Nt88vjYYiGcayIDO0tIJ0yUaMG7Ko5ii_3q4FnQMiTikq31_CfqEl1uuXtGBHuEbtKyqjar2u7qpq3onG3Xg8ABdiE2ZQ6hyrxr1aqmJw9P7vEPM_HHWi0nwqTsvyfQDL45sEA)
 
 1. The machine starts in `state0`.
 2. In `state0`
