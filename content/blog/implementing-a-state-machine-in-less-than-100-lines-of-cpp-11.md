@@ -290,7 +290,7 @@ private:
 
 ### Example 1
 
-[![](https://mermaid.ink/img/pako:eNqFkLEOwjAMRH8l8twKkjEDEysTaxYrMW0kkqDgVKqq_juhVWk3PJ2t55PPE9jkCDS8GZmuHruMoR2UiaLWMjyLtr2sUgotaKDIUpwEWvYpygMpd1JtpPqRR0_1zxMaCJQDeldvm76bBrinQAZ0lY4eWJ5swMS5olg43cdoQXMu1EBOpeu3przcHm0bkvOc8m3Nvrxg_gAQi1ZK?type=png)](https://mermaid.live/edit#pako:eNqFkLEOwjAMRH8l8twKkjEDEysTaxYrMW0kkqDgVKqq_juhVWk3PJ2t55PPE9jkCDS8GZmuHruMoR2UiaLWMjyLtr2sUgotaKDIUpwEWvYpygMpd1JtpPqRR0_1zxMaCJQDeldvm76bBrinQAZ0lY4eWJ5swMS5olg43cdoQXMu1EBOpeu3przcHm0bkvOc8m3Nvrxg_gAQi1ZK)
+![state-machine-1](state-machine-1.svg)
 
 1. The machine starts in `state0`.
 2. In `state0`
