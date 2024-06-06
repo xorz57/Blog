@@ -73,8 +73,10 @@ C:/vcpkg/vcpkg.exe integrate install
         "--profiling-format=google-trace",
         "--profiling-output=cmake.json"
     ],
+    "cmake.configureOnOpen": true,
     "cmake.generator": "Ninja",
-    "cmake.configureOnOpen": true
+    "cmake.options.statusBarVisibility": "icon",
+    "cmake.showOptionsMovedNotification": false
 }
 ```
 
