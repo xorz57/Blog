@@ -100,9 +100,7 @@ private:
 #include <vector>
 
 using action_t = std::function<void()>;
-
 using enter_action_t = std::function<void()>;
-
 using leave_action_t = std::function<void()>;
 
 template<typename state_t>
