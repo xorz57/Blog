@@ -290,8 +290,6 @@ private:
 
 ### Example 1
 
-<img src = "state-machine-1.svg">
-
 1. The machine starts in `state0`.
 2. In `state0`
     - On `event1`, it transitions to `state1` and performs `action1`.
