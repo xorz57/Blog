@@ -290,6 +290,8 @@ private:
 
 ### Example 1
 
+![state-machine-1](https://github.com/xorz57/Blog/assets/84932056/ea88931a-569d-46f0-bf7e-a59cc059214e)
+
 1. The machine starts in `state0`.
 2. In `state0`
     - On `event1`, it transitions to `state1` and performs `action1`.
