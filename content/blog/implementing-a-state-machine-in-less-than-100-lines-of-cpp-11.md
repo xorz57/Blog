@@ -27,7 +27,7 @@ Explore the full source code on [GitHub](https://github.com/xorz57/StateMachine)
 
 A state machine is a computational model used to design systems that can be in one of a finite number of states at any given time. It consists of a set of states, transitions between those states, and actions that occur as a result of those transitions. The machine begins in an initial state and changes states based on input or events, following predefined rules. State machines are useful for modeling behaviors in various fields such as software development, digital circuit design, and robotics, allowing for clear and organized representation of complex processes and decision logic.
 
-## Implementation
+## Implementation 1
 
 ```cpp
 #include <algorithm>
@@ -88,7 +88,7 @@ private:
 };
 ```
 
-## Example
+## Example 1
 
 [![](https://mermaid.ink/img/pako:eNqFkLEOwjAMRH8l8twKkjEDEysTaxYrMW0kkqDgVKqq_juhVWk3PJ2t55PPE9jkCDS8GZmuHruMoR2UiaLWMjyLtr2sUgotaKDIUpwEWvYpygMpd1JtpPqRR0_1zxMaCJQDeldvm76bBrinQAZ0lY4eWJ5swMS5olg43cdoQXMu1EBOpeu3przcHm0bkvOc8m3Nvrxg_gAQi1ZK?type=png)](https://mermaid.live/edit#pako:eNqFkLEOwjAMRH8l8twKkjEDEysTaxYrMW0kkqDgVKqq_juhVWk3PJ2t55PPE9jkCDS8GZmuHruMoR2UiaLWMjyLtr2sUgotaKDIUpwEWvYpygMpd1JtpPqRR0_1zxMaCJQDeldvm76bBrinQAZ0lY4eWJ5swMS5olg43cdoQXMu1EBOpeu3przcHm0bkvOc8m3Nvrxg_gAQi1ZK)
 
