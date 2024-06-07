@@ -21,7 +21,7 @@ truncate_summary = false
 featured = false
 +++
 
-Explore the full source code on [GitHub](https://github.com/xorz57/StateMachine).
+Implementing a state machine in C++ can seem daunting, but with C++11's features, we can build one in under 100 lines of code. In this article, I'll walk you through three implementations of a state machine, each with increasing complexity, and show you how to use them with simple examples. You can find the full source code on [GitHub](https://github.com/xorz57/StateMachine).
 
 ## What is a state machine?
 
@@ -30,6 +30,8 @@ A state machine is a computational model used to design systems that can be in o
 ## Implementations
 
 ### Implementation 1 (55 LOC)
+
+This is a basic implementation of a state machine using a transition table. It handles events and transitions between states, performing associated actions.
 
 ```cpp
 #include <algorithm>
@@ -90,6 +92,8 @@ private:
 ```
 
 ### Implementation 2 (90 LOC)
+
+This implementation adds enter and leave actions for each state, allowing for more control over the state transitions.
 
 ```cpp
 #include <algorithm>
@@ -185,6 +189,8 @@ private:
 ```
 
 ### Implementation 3 (95 LOC)
+
+This implementation introduces guards, which are conditions that must be met for a transition to occur, adding another layer of control to state transitions.
 
 ```cpp
 #include <algorithm>
@@ -288,6 +294,8 @@ private:
 
 ### Example 1
 
+Here, we use the first implementation of our state machine to transition between states and perform actions.
+
 ```cpp
 #include "StateMachine/StateMachine1.hpp"
 
@@ -355,6 +363,8 @@ state1
 ```
 
 ### Example 2
+
+Here, we use the second implementation to add enter and leave actions, showing more advanced state transitions.
 
 ```cpp
 #include "StateMachine/StateMachine2.hpp"
@@ -429,6 +439,8 @@ state1
 ```
 
 ### Example 3
+
+Here, we use the third implementation to demonstrate the use of guards, which allow or prevent transitions based on conditions.
 
 ```cpp
 #include "StateMachine/StateMachine3.hpp"
