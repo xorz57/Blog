@@ -13,7 +13,7 @@ toc = true
 comment = true
 copy = true
 math = false
-mermaid = false
+mermaid = true
 outdate_alert = true
 outdate_alert_days = false
 display_tags = true
@@ -288,6 +288,13 @@ private:
 
 ### Example 1
 
+{% mermaid() %}
+stateDiagram-v2
+    state0 --> state1 : event1 / action1
+    state1 --> state2 : event2 / action2
+    state2 --> state1 : event1 / action1
+{% end %}
+
 ```cpp
 #include "StateMachine/StateMachine1.hpp"
 
@@ -355,6 +362,13 @@ state1
 ```
 
 ### Example 2
+
+{% mermaid() %}
+stateDiagram-v2
+    state0 --> state1 : event1 / action1
+    state1 --> state2 : event2 / action2
+    state2 --> state1 : event1 / action1
+{% end %}
 
 ```cpp
 #include "StateMachine/StateMachine2.hpp"
@@ -429,6 +443,13 @@ state1
 ```
 
 ### Example 3
+
+{% mermaid() %}
+stateDiagram-v2
+    state0 --> state1 : event1 / guard1, action1
+    state1 --> state2 : event2 / guard2, action2
+    state2 --> state1 : event1 / guard3, action1
+{% end %}
 
 ```cpp
 #include "StateMachine/StateMachine3.hpp"
