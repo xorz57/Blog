@@ -29,7 +29,7 @@ A state machine is a computational model used to design systems that can be in o
 
 ## Implementations
 
-### Implementation 1 (55 LOC)
+### Implementation 1 (57 LOC)
 
 This is a basic implementation of a state machine using a transition table. It handles events and transitions between states, performing associated actions.
 
@@ -93,7 +93,7 @@ private:
 };
 ```
 
-### Implementation 2 (90 LOC)
+### Implementation 2 (92 LOC)
 
 This implementation adds enter and leave actions for each state, allowing for more control over the state transitions.
 
@@ -192,7 +192,7 @@ private:
 };
 ```
 
-### Implementation 3 (95 LOC)
+### Implementation 3 (97 LOC)
 
 This implementation introduces guards, which are conditions that must be met for a transition to occur, adding another layer of control to state transitions.
 
