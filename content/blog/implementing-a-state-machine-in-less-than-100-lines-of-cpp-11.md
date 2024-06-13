@@ -34,6 +34,8 @@ A state machine is a computational model used to design systems that can be in o
 This is a basic implementation of a state machine using a transition table. It handles events and transitions between states, performing associated actions.
 
 ```cpp
+#pragma once
+
 #include <algorithm>
 #include <functional>
 #include <tuple>
@@ -96,6 +98,8 @@ private:
 This implementation adds enter and leave actions for each state, allowing for more control over the state transitions.
 
 ```cpp
+#pragma once
+
 #include <algorithm>
 #include <functional>
 #include <tuple>
@@ -193,6 +197,8 @@ private:
 This implementation introduces guards, which are conditions that must be met for a transition to occur, adding another layer of control to state transitions.
 
 ```cpp
+#pragma once
+
 #include <algorithm>
 #include <functional>
 #include <tuple>
