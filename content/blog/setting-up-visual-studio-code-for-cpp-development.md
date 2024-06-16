@@ -69,7 +69,7 @@ C:/vcpkg/vcpkg.exe integrate install
     "workbench.productIconTheme": "material-product-icons",
     "cmake.configureArgs": [
         "-DCMAKE_TOOLCHAIN_FILE=C:/vcpkg/scripts/buildsystems/vcpkg.cmake",
-        "-DVCPKG_TARGET_TRIPLET=x64-windows-static",
+        "-DVCPKG_TARGET_TRIPLET=x64-windows",
         "--profiling-format=google-trace",
         "--profiling-output=cmake.json"
     ],
