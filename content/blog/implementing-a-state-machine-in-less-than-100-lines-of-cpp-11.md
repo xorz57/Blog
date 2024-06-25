@@ -41,26 +41,40 @@ This is a basic implementation of a state machine using a transition table. It h
 #include <tuple>
 #include <utility>
 #include <vector>
+```
 
+```cpp
 using action_t = std::function<void()>;
+```
 
+```cpp
 template<typename state_t, typename event_t>
 using transition_t = std::pair<std::pair<state_t, event_t>, std::tuple<action_t, state_t>>;
+```
 
+```cpp
 template<typename state_t, typename event_t>
 using transition_table_t = std::vector<transition_t<state_t, event_t>>;
+```
 
+```cpp
 template<typename state_t, typename event_t>
 class state_machine_t {
 public:
     state_machine_t() = default;
 
-    state_machine_t(const state_t &state, transition_table_t<state_t, event_t> transition_table) : m_state(state), m_transition_table(std::move(transition_table)) {}
+    state_machine_t(const state_t &state, transition_table_t<state_t, event_t> transition_table) :
+        m_state(state),
+        m_transition_table(std::move(transition_table)) {}
 
     bool handle_event(const event_t &event) {
-        const auto it = std::find_if(m_transition_table.begin(), m_transition_table.end(), [&](const transition_t<state_t, event_t> &transition) {
-            return transition.first.first == m_state && transition.first.second == event;
-        });
+        const auto it = std::find_if(
+            m_transition_table.begin(),
+            m_transition_table.end(),
+            [&](const transition_t<state_t, event_t> &transition) {
+                return transition.first.first == m_state && transition.first.second == event;
+            }
+        );
         if (it != m_transition_table.end()) {
             const action_t &action = std::get<0>(it->second);
             const state_t &state = std::get<1>(it->second);
@@ -106,34 +120,52 @@ This implementation adds enter and leave actions for each state, allowing for mo
 #include <unordered_map>
 #include <utility>
 #include <vector>
+```
 
+```cpp
 using action_t = std::function<void()>;
 using enter_action_t = std::function<void()>;
 using leave_action_t = std::function<void()>;
+```
 
+```cpp
 template<typename state_t>
 using enter_actions_t = std::unordered_map<state_t, enter_action_t>;
+```
 
+```cpp
 template<typename state_t>
 using leave_actions_t = std::unordered_map<state_t, leave_action_t>;
+```
 
+```cpp
 template<typename state_t, typename event_t>
 using transition_t = std::pair<std::pair<state_t, event_t>, std::tuple<action_t, state_t>>;
+```
 
+```cpp
 template<typename state_t, typename event_t>
 using transition_table_t = std::vector<transition_t<state_t, event_t>>;
+```
 
+```cpp
 template<typename state_t, typename event_t>
 class state_machine_t {
 public:
     state_machine_t() = default;
 
-    state_machine_t(const state_t &state, transition_table_t<state_t, event_t> transition_table) : m_state(state), m_transition_table(std::move(transition_table)) {}
+    state_machine_t(const state_t &state, transition_table_t<state_t, event_t> transition_table) :
+        m_state(state),
+        m_transition_table(std::move(transition_table)) {}
 
     bool handle_event(const event_t &event) {
-        const auto it = std::find_if(m_transition_table.begin(), m_transition_table.end(), [&](const transition_t<state_t, event_t> &transition) {
-            return transition.first.first == m_state && transition.first.second == event;
-        });
+        const auto it = std::find_if(
+            m_transition_table.begin(),
+            m_transition_table.end(),
+            [&](const transition_t<state_t, event_t> &transition) {
+                return transition.first.first == m_state && transition.first.second == event;
+            }
+        );
         if (it != m_transition_table.end()) {
             const action_t &action = std::get<0>(it->second);
             const state_t &state = std::get<1>(it->second);
@@ -205,35 +237,53 @@ This implementation introduces guards, which are conditions that must be met for
 #include <unordered_map>
 #include <utility>
 #include <vector>
+```
 
+```cpp
 using guard_t = std::function<bool()>;
 using action_t = std::function<void()>;
 using enter_action_t = std::function<void()>;
 using leave_action_t = std::function<void()>;
+```
 
+```cpp
 template<typename state_t>
 using enter_actions_t = std::unordered_map<state_t, enter_action_t>;
+```
 
+```cpp
 template<typename state_t>
 using leave_actions_t = std::unordered_map<state_t, leave_action_t>;
+```
 
+```cpp
 template<typename state_t, typename event_t>
 using transition_t = std::pair<std::pair<state_t, event_t>, std::tuple<guard_t, action_t, state_t>>;
+```
 
+```cpp
 template<typename state_t, typename event_t>
 using transition_table_t = std::vector<transition_t<state_t, event_t>>;
+```
 
+```cpp
 template<typename state_t, typename event_t>
 class state_machine_t {
 public:
     state_machine_t() = default;
 
-    state_machine_t(const state_t &state, transition_table_t<state_t, event_t> transition_table) : m_state(state), m_transition_table(std::move(transition_table)) {}
+    state_machine_t(const state_t &state, transition_table_t<state_t, event_t> transition_table) :
+        m_state(state),
+        m_transition_table(std::move(transition_table)) {}
 
     bool handle_event(const event_t &event) {
-        const auto it = std::find_if(m_transition_table.begin(), m_transition_table.end(), [&](const transition_t<state_t, event_t> &transition) {
-            return transition.first.first == m_state && transition.first.second == event;
-        });
+        const auto it = std::find_if(
+            m_transition_table.begin(),
+            m_transition_table.end(),
+            [&](const transition_t<state_t, event_t> &transition) {
+                return transition.first.first == m_state && transition.first.second == event;
+            }
+        );
         if (it != m_transition_table.end()) {
             const guard_t &guard = std::get<0>(it->second);
             const action_t &action = std::get<1>(it->second);
