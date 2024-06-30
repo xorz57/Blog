@@ -21,6 +21,8 @@ truncate_summary = false
 featured = false
 +++
 
+![Screenshot](https://github.com/xorz57/Blog/assets/84932056/bbad6fe9-1e10-4b35-87fc-f3bb9819db85)
+
 ## Fonts
 
 - [Fira Code](https://github.com/tonsky/FiraCode)
