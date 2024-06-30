@@ -57,7 +57,7 @@ C:/vcpkg/vcpkg.exe integrate install
 
 ```json
 {
-    "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "Iosevka, Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "editor.guides.bracketPairs": "active",
     "editor.mouseWheelZoom": true,
@@ -74,6 +74,10 @@ C:/vcpkg/vcpkg.exe integrate install
     ],
     "cmake.configureOnOpen": true,
     "cmake.generator": "Ninja",
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
     "cmake.options.statusBarVisibility": "visible",
     "cmake.showOptionsMovedNotification": false
 }
