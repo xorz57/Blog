@@ -15,5 +15,6 @@ title = "Getting Started with Baofeng GT-5R"
 | Setting | Value |
 | ------- | ----- |
 | Beep    | `OFF` |
+| Roger   | `ON`  |
 | SQL     | `5`   |
 | Voice   | `OFF` |
