@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="container has-text-centered">
+    <p class="title is-1">404</p>
+    <p class="subtitle is-3">Page Not Found</p>
+    {% set item = config.extra.navbar_items | first %}
+    <a class="button" href="{{ item.url | safe }}">
+        <span class="icon">
+            {{ load_data(path='icons/' ~ item.icon ~ '.svg') | safe }}
+        </span>
+        <span>{{ item.title | safe }}</span>
+    </a>
+</div>
+{% endblock main %}

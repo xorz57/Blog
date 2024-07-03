@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="container">
+    <section class="section has-text-centered">
+        {% if config.title %}
+        <p class="title is-1">{{ config.title | safe }}</p>
+        {% endif %}
+
+        {% if config.description %}
+        <p class="subtitle is-3">{{ config.description | safe }}</p>
+        {% endif %}
+    </section>
+
+    <div class="buttons is-centered">
+        {% for item in config.extra.social_items %}
+        <a class="button" href="{{ item.url | safe }}">
+            <span class="icon">
+                {{ load_data(path='icons/' ~ item.icon ~ '.svg') | safe }}
+            </span>
+            <span>{{ item.title | safe }}</span>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock main %}
