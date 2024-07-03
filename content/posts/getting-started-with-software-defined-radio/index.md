@@ -34,8 +34,6 @@ title = "Getting Started with Software Defined Radio"
 
 3. Run the application
 
-    ![sdr-sharp](sdr-sharp.png)
-
 4. Select `RTL-SDR` as source
 
 5. Click the play button
@@ -47,8 +45,6 @@ title = "Getting Started with Software Defined Radio"
 2. Extract the archive
 
 3. Run the application
-
-    ![sdr-plus-plus](sdr-plus-plus.png)
 
 4. Select `RTL-SDR` as source
 
