@@ -1,5 +1,5 @@
 +++
-date = 2024-06-06
+date = 2024-07-04
 draft = false
 title = "Getting Started with Software Defined Radio"
 +++
@@ -12,7 +12,7 @@ title = "Getting Started with Software Defined Radio"
 
 ## Software
 
-### (Required) Install WinUSB Driver
+### Install WinUSB Driver
 
 1. Download [Zadig](https://zadig.akeo.ie/)
 
