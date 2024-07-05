@@ -14,7 +14,7 @@
 
     <div class="buttons is-centered">
         {% for item in config.extra.social_items %}
-        <a class="button" href="{{ item.url | safe }}">
+        <a class="button is-link" href="{{ item.url | safe }}">
             <span class="icon">
                 {{ load_data(path='icons/' ~ item.icon ~ '.svg') | safe }}
             </span>
