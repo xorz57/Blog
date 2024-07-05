@@ -8,8 +8,6 @@ title = "Getting Started with Software Defined Radio"
 
 1. Buy the official `RTL-SDR BLOG V4` dongle from the [RTL-SDR Store](https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/)
 
-    ![rtl-sdr-blog-v4](rtl-sdr-blog-v4.jpg)
-
 ## Software
 
 ### Install WinUSB Driver
