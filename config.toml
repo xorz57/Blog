@@ -21,7 +21,7 @@ navbar_items = [
 ]
 social_items = [
     { title = "GitHub", url = "https://github.com/xorz57", icon = "github-fill" },
-    { title = "LinkedIn", url = "https://www.linkedin.com/in/xorz57", icon = "linkedin-fill" }
+    { title = "LinkedIn", url = "https://www.linkedin.com/in/xorz57", icon = "linkedin-fill" },
     { title = "Resume", url= "https://github.com/user-attachments/files/16323564/Georgios_Fotopoulos.pdf", icon = "article-fill" }
 ]
 chart = false
