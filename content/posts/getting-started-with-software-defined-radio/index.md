@@ -6,7 +6,7 @@ title = "Getting Started with Software Defined Radio"
 
 ## Hardware
 
-1. Buy the official `RTL-SDR BLOG V4` dongle from the [RTL-SDR Store](https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/)
+1. [RTL-SDR Store](https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/)
 
 ## Software
 

@@ -6,9 +6,9 @@ title = "Getting Started with Baofeng GT-5R"
 
 ## Hardware
 
-- Buy the official [Baofeng GT-5R](https://www.baofengradio.com/products/gt-5r)
+- [Baofeng GT-5R](https://www.baofengradio.com/products/gt-5r)
 
-- Buy the official [Nagoya NA-771 (SMA-Female)](https://baofengtech.com/product/nagoya-na-771/)
+- [Nagoya NA-771 (SMA-Female)](https://baofengtech.com/product/nagoya-na-771/)
 
 ## Settings
 
