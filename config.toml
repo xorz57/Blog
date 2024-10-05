@@ -22,7 +22,7 @@ navbar_items = [
 social_items = [
     { title = "GitHub", url = "https://github.com/xorz57", icon = "github-fill" },
     { title = "LinkedIn", url = "https://www.linkedin.com/in/xorz57", icon = "linkedin-fill" },
-    { title = "Resume", url= "https://github.com/user-attachments/files/17176693/resume.pdf", icon = "attachment-fill" }
+    { title = "Resume", url= "https://github.com/user-attachments/files/17265479/Software_Engineer_Georgios_Fotopoulos.pdf", icon = "attachment-fill" }
 ]
 chart = false
 katex = false
