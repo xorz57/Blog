@@ -9,7 +9,7 @@
     <ul>
         {% for page in section.pages %}
         <li class="mb-4">
-            <a href="{{ page.permalink | safe }}" class="box">
+            <a href="{{ page.permalink | safe }}" class="block custom-hover">
                 <div class="columns is-mobile">
                     <div class="column is-half">
                         <p class="subtitle is-5 has-text-left">
@@ -31,4 +31,10 @@
         {% endfor %}
     </ul>
 </div>
+
+<style>
+    .custom-hover:hover {
+        text-decoration: underline dashed;
+    }
+</style>
 {% endblock main %}
