@@ -1,10 +1,10 @@
 ---
 date: '2024-11-01T00:59:25+02:00'
 draft: false
-title: 'Getting Started With Software Defined Ratio'
+title: 'Getting Started With RTL-SDR V4'
 
 author: 'xorz57'
-tags: ['SDR','RTLSDR']
+tags: ['sdr','rtlsdr']
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true

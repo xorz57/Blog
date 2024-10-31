@@ -1,10 +1,10 @@
 ---
 date: '2024-11-01T01:04:09+02:00'
 draft: false
-title: 'Implementing a State Machine in Less Than 100 Lines of C++ 11'
+title: 'Implementing a State Machine in C++'
 
 author: 'xorz57'
-tags: ['C++','C++11','FSM']
+tags: ['c++','c++11','fsm']
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true

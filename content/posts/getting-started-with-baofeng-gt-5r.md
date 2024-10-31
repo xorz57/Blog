@@ -4,7 +4,7 @@ draft: false
 title: 'Getting Started With Baofeng GT-5R'
 
 author: 'xorz57'
-tags: ['Baofeng','VHF','UHF']
+tags: ['baofeng','vhf','uhf']
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
