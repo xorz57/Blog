@@ -1,0 +1,58 @@
+baseURL: https://xorz57.pages.dev/
+languageCode: en-us
+title: xorz57
+
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+params:
+  title: xorz57
+  description: "xorz57's Blog"
+  keywords: [Blog]
+  author: xorz57
+
+  social: true
+
+  assets:
+    favicon: /favicon.svg
+
+  profileMode:
+    enabled: true
+    title: xorz57
+    subtitle: "Software Engineer"
+    buttons:
+      - name: Archives
+        url: archives
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/xorz57"
+    - name: linkedin
+      url: "https://linkedin.com/in/xorz57/"
+    - name: stackoverflow
+      url: "https://stackoverflow.com"
+
+menu:
+  main:
+    - identifier: archives
+      name: archives
+      url: /archives/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    lineNos: true

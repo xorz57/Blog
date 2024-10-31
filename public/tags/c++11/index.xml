@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>C&#43;&#43;11 on xorz57</title>
+    <link>http://localhost:1313/tags/c&#43;&#43;11/</link>
+    <description>Recent content in C&#43;&#43;11 on xorz57</description>
+    <generator>Hugo -- 0.136.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Nov 2024 01:04:09 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/c++11/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Implementing a State Machine in Less Than 100 Lines of C&#43;&#43; 11</title>
+      <link>http://localhost:1313/posts/implementing-a-state-machine-in-less-than-100-lines-of-cpp-11/</link>
+      <pubDate>Fri, 01 Nov 2024 01:04:09 +0200</pubDate>
+      <guid>http://localhost:1313/posts/implementing-a-state-machine-in-less-than-100-lines-of-cpp-11/</guid>
+      <description>&lt;p&gt;Implementing a state machine in C++ can seem daunting, but with C++11&amp;rsquo;s features, we can build one in under 100 lines of code. In this article, I&amp;rsquo;ll walk you through three implementations of a state machine, each with increasing complexity, and show you how to use them with simple examples. You can find the full source code on &lt;a href=&#34;https://github.com/xorz57/StateMachine&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-a-state-machine&#34;&gt;What is a state machine?&lt;/h2&gt;
+&lt;p&gt;A state machine is a computational model used to design systems that can be in one of a finite number of states at any given time. It consists of a set of states, transitions between those states, and actions that occur as a result of those transitions. The machine begins in an initial state and changes states based on input or events, following predefined rules. State machines are useful for modeling behaviors in various fields such as software development, digital circuit design, and robotics, allowing for clear and organized representation of complex processes and decision logic.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
