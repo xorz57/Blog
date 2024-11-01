@@ -17,6 +17,10 @@ ShowWordCount: true
 
 - [Nagoya NA-771 (SMA-Female)](https://baofengtech.com/product/nagoya-na-771/)
 
+## Software
+
+- [CHIRP](https://chirpmyradio.com/projects/chirp/wiki/Home)
+
 ## Settings
 
 | Setting | Value |
