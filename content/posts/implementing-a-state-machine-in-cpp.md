@@ -96,16 +96,14 @@ private:
 ```cpp
 #pragma once
 
-#include <algorithm>
-#include <functional>
-#include <tuple>
+// ...
+
 #include <unordered_map>
-#include <utility>
-#include <vector>
 ```
 
 ```cpp
-using action_t = std::function<void()>;
+// ...
+
 using enter_action_t = std::function<void()>;
 using leave_action_t = std::function<void()>;
 
@@ -114,23 +112,13 @@ using enter_actions_t = std::unordered_map<state_t, enter_action_t>;
 
 template<typename state_t>
 using leave_actions_t = std::unordered_map<state_t, leave_action_t>;
-
-template<typename state_t, typename event_t>
-using transition_t = std::pair<std::pair<state_t, event_t>, std::tuple<action_t, state_t>>;
-
-template<typename state_t, typename event_t>
-using transition_table_t = std::vector<transition_t<state_t, event_t>>;
 ```
 
 ```cpp
 template<typename state_t, typename event_t>
 class state_machine_t {
 public:
-    state_machine_t() = default;
-
-    state_machine_t(const state_t &state, transition_table_t<state_t, event_t> transition_table) :
-        m_state(state),
-        m_transition_table(std::move(transition_table)) {}
+    // ...
 
     bool handle_event(const event_t &event) {
         const auto it = std::find_if(
@@ -158,28 +146,12 @@ public:
         return false;
     }
 
-    state_t get_state() const {
-        return m_state;
-    }
-
-    transition_table_t<state_t, event_t> get_transition_table() const {
-        return m_transition_table;
-    }
-
     enter_actions_t<state_t> get_enter_actions() const {
         return m_enter_actions;
     }
 
     leave_actions_t<state_t> get_leave_actions() const {
         return m_leave_actions;
-    }
-
-    void set_state(const state_t &state) {
-        m_state = state;
-    }
-
-    void set_transition_table(const transition_table_t<state_t, event_t> &transition_table) {
-        m_transition_table = transition_table;
     }
 
     void set_enter_action(const state_t &state, const enter_action_t &enter_action) {
@@ -191,8 +163,8 @@ public:
     }
 
 private:
-    state_t m_state;
-    transition_table_t<state_t, event_t> m_transition_table;
+    // ...
+
     enter_actions_t<state_t> m_enter_actions;
     leave_actions_t<state_t> m_leave_actions;
 };
@@ -203,42 +175,23 @@ private:
 ```cpp
 #pragma once
 
-#include <algorithm>
-#include <functional>
-#include <tuple>
-#include <unordered_map>
-#include <utility>
-#include <vector>
+// ...
 ```
 
 ```cpp
+// ...
+
 using guard_t = std::function<bool()>;
-using action_t = std::function<void()>;
-using enter_action_t = std::function<void()>;
-using leave_action_t = std::function<void()>;
-
-template<typename state_t>
-using enter_actions_t = std::unordered_map<state_t, enter_action_t>;
-
-template<typename state_t>
-using leave_actions_t = std::unordered_map<state_t, leave_action_t>;
 
 template<typename state_t, typename event_t>
 using transition_t = std::pair<std::pair<state_t, event_t>, std::tuple<guard_t, action_t, state_t>>;
-
-template<typename state_t, typename event_t>
-using transition_table_t = std::vector<transition_t<state_t, event_t>>;
 ```
 
 ```cpp
 template<typename state_t, typename event_t>
 class state_machine_t {
 public:
-    state_machine_t() = default;
-
-    state_machine_t(const state_t &state, transition_table_t<state_t, event_t> transition_table) :
-        m_state(state),
-        m_transition_table(std::move(transition_table)) {}
+    // ...
 
     bool handle_event(const event_t &event) {
         const auto it = std::find_if(
@@ -270,43 +223,10 @@ public:
         return false;
     }
 
-    state_t get_state() const {
-        return m_state;
-    }
-
-    transition_table_t<state_t, event_t> get_transition_table() const {
-        return m_transition_table;
-    }
-
-    enter_actions_t<state_t> get_enter_actions() const {
-        return m_enter_actions;
-    }
-
-    leave_actions_t<state_t> get_leave_actions() const {
-        return m_leave_actions;
-    }
-
-    void set_state(const state_t &state) {
-        m_state = state;
-    }
-
-    void set_transition_table(const transition_table_t<state_t, event_t> &transition_table) {
-        m_transition_table = transition_table;
-    }
-
-    void set_enter_action(const state_t &state, const enter_action_t &enter_action) {
-        m_enter_actions[state] = enter_action;
-    }
-
-    void set_leave_action(const state_t &state, const leave_action_t &leave_action) {
-        m_leave_actions[state] = leave_action;
-    }
+    // ...
 
 private:
-    state_t m_state;
-    transition_table_t<state_t, event_t> m_transition_table;
-    enter_actions_t<state_t> m_enter_actions;
-    leave_actions_t<state_t> m_leave_actions;
+    // ...
 };
 ```
 
