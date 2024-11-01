@@ -24,13 +24,6 @@ params:
     enabled: true
     title: xorz57
     subtitle: "Software Engineer"
-    buttons:
-      - name: Archives
-        url: archives
-      - name: Posts
-        url: posts
-      - name: Tags
-        url: tags
 
   socialIcons:
     - name: github
