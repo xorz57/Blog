@@ -25,6 +25,11 @@ params:
     title: xorz57
     subtitle: "Software Engineer"
 
+  editPost:
+    URL: "https://github.com/xorz57/Blog/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
+
   socialIcons:
     - name: github
       url: "https://github.com/xorz57"
