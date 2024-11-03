@@ -26,7 +26,7 @@ params:
     subtitle: "Software Engineer"
 
   editPost:
-    URL: "https://github.com/xorz57/Blog/content"
+    URL: "https://github.com/xorz57/Blog/blob/main/content/posts"
     Text: "Suggest Changes"
     appendFilePath: true
 
