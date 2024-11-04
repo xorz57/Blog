@@ -1,4 +1,4 @@
-baseURL: "https://xorz57.pages.dev/"
+baseURL: https://xorz57.pages.dev/
 languageCode: en-us
 title: xorz57
 
@@ -37,19 +37,19 @@ params:
         url: posts
 
   editPost:
-    URL: "https://github.com/xorz57/Blog/blob/main/content"
+    URL: https://github.com/xorz57/Blog/blob/main/content
     Text: "Suggest Changes"
     appendFilePath: true
 
   socialIcons:
     - name: telegram
-      url: "https://t.me/xorz57"
+      url: https://t.me/xorz57
     - name: github
-      url: "https://github.com/xorz57"
+      url: https://github.com/xorz57
     - name: linkedin
-      url: "https://linkedin.com/in/xorz57/"
+      url: https://linkedin.com/in/xorz57/
     - name: stackoverflow
-      url: "https://stackoverflow.com"
+      url: https://stackoverflow.com
 
 menu:
   main:
