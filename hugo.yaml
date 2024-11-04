@@ -31,6 +31,8 @@ params:
     appendFilePath: true
 
   socialIcons:
+    - name: telegram
+      url: "https://t.me/xorz57"
     - name: github
       url: "https://github.com/xorz57"
     - name: linkedin
