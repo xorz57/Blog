@@ -24,6 +24,9 @@ params:
     enabled: true
     title: xorz57
     subtitle: "Software Engineer"
+    buttons:
+      - name: Posts
+        url: posts
 
   editPost:
     URL: "https://github.com/xorz57/Blog/blob/main/content"
