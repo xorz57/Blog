@@ -44,10 +44,14 @@ menu:
       name: archives
       url: /archives/
       weight: 10
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 20
     - identifier: tags
       name: tags
       url: /tags/
-      weight: 20
+      weight: 30
 
 pygmentsUseClasses: true
 markup:

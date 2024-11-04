@@ -4,6 +4,7 @@ draft: false
 title: 'Implementing a State Machine in C++'
 
 author: 'xorz57'
+categories: ['programming']
 tags: ['c++','c++11','fsm']
 ShowReadingTime: true
 ShowBreadCrumbs: true

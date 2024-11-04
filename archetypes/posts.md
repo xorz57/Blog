@@ -4,7 +4,8 @@ draft: true
 title: '{{ replace .File.ContentBaseName `-` ` ` | title }}'
 
 author: 'xorz57'
-tags: ['first','second', 'third']
+categories: ['category1']
+tags: ['tag1','tag2', 'tag3']
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
