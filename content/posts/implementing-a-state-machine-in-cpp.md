@@ -14,13 +14,13 @@ ShowWordCount: true
 
 Implementing a state machine in C++ can seem daunting, but with C++11's features, we can build one in under 100 lines of code. In this article, I'll walk you through three implementations of a state machine, each with increasing complexity, and show you how to use them with simple examples. You can find the full source code on [GitHub](https://github.com/xorz57/StateMachine).
 
-## What is a state machine?
+### What is a state machine?
 
 A state machine is a computational model used to design systems that can be in one of a finite number of states at any given time. It consists of a set of states, transitions between those states, and actions that occur as a result of those transitions. The machine begins in an initial state and changes states based on input or events, following predefined rules. State machines are useful for modeling behaviors in various fields such as software development, digital circuit design, and robotics, allowing for clear and organized representation of complex processes and decision logic.
 
-## Implementations
+### Implementations
 
-### Implementation 1 (57 LOC)
+#### Implementation 1 (57 LOC)
 
 ```cpp
 #pragma once
@@ -92,7 +92,7 @@ private:
 };
 ```
 
-### Implementation 2 (92 LOC)
+#### Implementation 2 (92 LOC)
 
 ```cpp
 #pragma once
@@ -172,7 +172,7 @@ private:
 };
 ```
 
-### Implementation 3 (97 LOC)
+#### Implementation 3 (97 LOC)
 
 ```cpp
 #pragma once
@@ -232,9 +232,9 @@ private:
 };
 ```
 
-## Examples
+### Examples
 
-### Example 1
+#### Example 1
 
 ```cpp
 #include "StateMachine/StateMachine1.hpp"
@@ -292,7 +292,7 @@ int main() {
 }
 ```
 
-### Example 2
+#### Example 2
 
 ```cpp
 #include "StateMachine/StateMachine2.hpp"
@@ -353,7 +353,7 @@ int main() {
 }
 ```
 
-### Example 3
+#### Example 3
 
 ```cpp
 #include "StateMachine/StateMachine3.hpp"

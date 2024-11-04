@@ -12,13 +12,13 @@ ShowPostNavLinks: true
 ShowWordCount: true
 ---
 
-## Hardware
+### Hardware
 
 1. [RTL-SDR Store](https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/)
 
-## Software
+### Software
 
-### Install WinUSB Driver
+#### Install WinUSB Driver
 
 1. Download [Zadig](https://zadig.akeo.ie/)
 
@@ -30,7 +30,7 @@ ShowWordCount: true
 
 5. Select the `Bulk-In, Interface (Interface 1)` and click the `Install Driver` button
 
-### (Option 1) Install SDR#
+#### (Option 1) Install SDR#
 
 1. Download [SDR#](https://airspy.com/download/)
 
@@ -42,7 +42,7 @@ ShowWordCount: true
 
 5. Click the play button
 
-### (Option 2) Install SDR++
+#### (Option 2) Install SDR++
 
 1. Download [SDR++](https://github.com/AlexandreRouma/SDRPlusPlus/releases/tag/nightly)
 

@@ -12,17 +12,17 @@ ShowPostNavLinks: true
 ShowWordCount: true
 ---
 
-## Hardware
+### Hardware
 
 - [Baofeng GT-5R](https://www.baofengradio.com/products/gt-5r)
 
 - [Nagoya NA-771 (SMA-Female)](https://baofengtech.com/product/nagoya-na-771/)
 
-## Software
+### Software
 
 - [CHIRP](https://chirpmyradio.com/projects/chirp/wiki/Home)
 
-## Settings
+### Settings
 
 | Setting | Value |
 | ------- | ----- |
