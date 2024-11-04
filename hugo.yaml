@@ -17,6 +17,14 @@ params:
 
   social: true
 
+  # ShowPostNavLinks: true
+  ShowReadingTime: true
+  ShowWordCount: true
+  ShowBreadCrumbs: true
+  ShowShareButtons: true
+  ShowToc: true
+  TocOpen: true
+
   assets:
     favicon: /favicon.svg
 

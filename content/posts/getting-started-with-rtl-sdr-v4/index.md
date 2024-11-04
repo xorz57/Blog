@@ -6,10 +6,6 @@ title: 'Getting Started With RTL-SDR V4'
 author: 'xorz57'
 categories: ['amateur radio']
 tags: ['sdr','rtlsdr']
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
 ---
 
 ### Hardware
