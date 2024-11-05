@@ -66,20 +66,20 @@ public:
         return false;
     }
 
-    state_t get_state() const {
-        return m_state;
-    }
-
-    transition_table_t<state_t, event_t> get_transition_table() const {
-        return m_transition_table;
-    }
-
     void set_state(const state_t &state) {
         m_state = state;
     }
 
     void set_transition_table(const transition_table_t<state_t, event_t> &transition_table) {
         m_transition_table = transition_table;
+    }
+
+    state_t get_state() const {
+        return m_state;
+    }
+
+    transition_table_t<state_t, event_t> get_transition_table() const {
+        return m_transition_table;
     }
 
 private:
@@ -144,13 +144,7 @@ public:
         return false;
     }
 
-    enter_actions_t<state_t> get_enter_actions() const {
-        return m_enter_actions;
-    }
-
-    leave_actions_t<state_t> get_leave_actions() const {
-        return m_leave_actions;
-    }
+    // ...
 
     void set_enter_action(const state_t &state, const enter_action_t &enter_action) {
         m_enter_actions[state] = enter_action;
@@ -158,6 +152,16 @@ public:
 
     void set_leave_action(const state_t &state, const leave_action_t &leave_action) {
         m_leave_actions[state] = leave_action;
+    }
+
+    // ...
+
+    enter_actions_t<state_t> get_enter_actions() const {
+        return m_enter_actions;
+    }
+
+    leave_actions_t<state_t> get_leave_actions() const {
+        return m_leave_actions;
     }
 
 private:
