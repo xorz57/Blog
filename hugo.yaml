@@ -47,9 +47,9 @@ params:
     - name: github
       url: https://github.com/xorz57
     - name: linkedin
-      url: https://linkedin.com/in/xorz57/
+      url: https://linkedin.com/in/xorz57
     - name: stackoverflow
-      url: https://stackoverflow.com
+      url: https://stackoverflow.com/users/21348049/xorz57
 
 menu:
   main:
