@@ -26,19 +26,7 @@ tags: ['sdr','rtlsdr']
 
 5. Select the `Bulk-In, Interface (Interface 1)` and click the `Install Driver` button
 
-#### (Option 1) Install SDR#
-
-1. Download [SDR#](https://airspy.com/download/)
-
-2. Extract the archive
-
-3. Run the application
-
-4. Select `RTL-SDR` as source
-
-5. Click the play button
-
-#### (Option 2) Install SDR++
+#### Install SDR++
 
 1. Download [SDR++](https://github.com/AlexandreRouma/SDRPlusPlus/releases/tag/nightly)
 
